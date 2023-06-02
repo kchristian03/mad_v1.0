@@ -16,7 +16,7 @@ class ViewModel: ObservableObject {
             genre: "Horror",
             releaseDate: "March 10, 2022",
             duration: "1h 44m",
-            rating: 4.1,
+            rating: "4.1",
             imageName: "poster1",
             category: "Popular Now",
             synopsis: "blabalalba"
@@ -26,7 +26,7 @@ class ViewModel: ObservableObject {
             genre: "Adventure/Comedy",
             releaseDate: "March 30, 2022",
             duration: "2h 10m",
-            rating: 4.7,
+            rating: "4.7",
             imageName: "poster2",
             category: "Popular Now",
             synopsis: "yegfads"
@@ -36,7 +36,7 @@ class ViewModel: ObservableObject {
             genre: "Action/Adventure",
             releaseDate: "May 2, 2022",
             duration: "2h 6m",
-            rating: 3.5,
+            rating: "3.5",
             imageName: "poster3",
             category: "Popular Now",
             synopsis: "dfmakfa"
@@ -46,7 +46,7 @@ class ViewModel: ObservableObject {
             genre: "Action/Adventure",
             releaseDate: "May 2, 2022",
             duration: "2h 6m",
-            rating: 3.5,
+            rating: "3.5",
             imageName: "poster7",
             category: "Now in Cinema",
             synopsis: "fejae"
@@ -56,7 +56,7 @@ class ViewModel: ObservableObject {
             genre: "Action/Adventure",
             releaseDate: "May 2, 2022",
             duration: "2h 6m",
-            rating: 3.5,
+            rating: "3.5",
             imageName: "poster13",
             category: "Coming Soon",
             synopsis: "epqorir3"

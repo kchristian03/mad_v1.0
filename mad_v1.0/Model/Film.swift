@@ -14,13 +14,13 @@ struct Film : Identifiable, Hashable, Codable{
     var genre: String
     var releaseDate: String
     var duration: String
-    var rating: Double
+    var rating: String
     var imageName: String
     var category: String
     var synopsis: String
     
     
-    init(id: UUID = UUID(), title: String, genre: String, releaseDate: String, duration: String, rating: Double, imageName: String, category: String, synopsis: String){
+    init(id: UUID = UUID(), title: String, genre: String, releaseDate: String, duration: String, rating: String, imageName: String, category: String, synopsis: String){
         self.id = id
         self.title = title
         self.genre = genre
