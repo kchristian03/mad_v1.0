@@ -28,7 +28,7 @@ class ViewModel: ObservableObject {
             duration: "2h 10m",
             rating: 4.7,
             imageName: "poster2",
-            category: "Popular Now"
+            category: "Popular Now",
             synopsis: "yegfads"
         ),
         Film(
