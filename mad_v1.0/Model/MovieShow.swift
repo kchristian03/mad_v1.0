@@ -13,7 +13,7 @@ import SwiftUI
 struct MovieShow: Decodable, Identifiable{
     var id: Int
     var film: Film
-    var cinema: Cinema
+    var cinema: [Cinema]
 //    var startTime
 //    var endTime
     

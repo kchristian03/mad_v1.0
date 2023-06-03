@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Cinema: Codable, Hashable{
 //    var id: Int
