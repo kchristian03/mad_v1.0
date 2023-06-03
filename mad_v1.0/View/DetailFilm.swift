@@ -11,39 +11,39 @@ struct DetailFilm: View {
     
     @EnvironmentObject var filmViewModel: ViewModel
     
-    var film: Film
+    var ms: MovieShow
     
     var body: some View {
             VStack(spacing: 20) {
-                Image(film.imageName)
+                Image(ms.film.imageName)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .cornerRadius(20)
                 
-                Text(film.title)
+                Text(ms.film.title)
                     .font(.title)
                     .fontWeight(.bold)
                 
-                Text(film.genre)
+                Text(ms.film.genre)
                     .font(.subheadline)
                     .foregroundColor(.gray)
                 
-                Text("Release Date: \(film.releaseDate)")
+                Text("Release Date: \(ms.film.releaseDate)")
                     .font(.subheadline)
                     .foregroundColor(.gray)
                 
-                Text("Duration: \(film.duration)")
+                Text("Duration: \(ms.film.duration)")
                     .font(.subheadline)
                     .foregroundColor(.gray)
                 
-                Text("Rating: \(film.rating)")
+                Text("Rating: \(ms.film.rating)")
                     .font(.subheadline)
                     .foregroundColor(.gray)
                 
                 Spacer()
             }
             .padding()
-            .navigationBarTitle(film.title)
+            .navigationBarTitle(ms.film.title)
     }
 }
 
@@ -51,7 +51,7 @@ struct DetailFilm_Previews: PreviewProvider {
     static var modelFilm = ViewModel()
     
     static var previews: some View {
-        DetailFilm(film: modelFilm.films[0])
+        DetailFilm(ms: modelFilm.movieshows[0])
             .environmentObject(modelFilm)
     }
 }

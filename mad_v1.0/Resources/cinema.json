@@ -1,0 +1,291 @@
+[
+    {
+    "id": 1,    
+    "cinema": {
+            "name": "Ciputra World",
+            "address": "Jl. Mayjen Sungkono No.89, Gn. Sari, Kec. Dukuhpakis, Surabaya, Jawa Timur 60225",
+            "coordinates": {
+                "latitude": -7.293442343525911,
+                "longitude": 112.7192663846563
+            },
+            "films": [{
+                    "id": 1,
+                    "title": "Spider-Man: Across the Spider-Verse",
+                    "genre": "Animation, Action, Adventure",
+                    "releaseDate": "May 31, 2023",
+                    "duration": "2h 16m",
+                    "rating": "4.3",
+                    "imageName": "poster1",
+                    "category": "Popular Now",
+                    "synopsis": "After reuniting with Gwen Stacy, Brooklyn’s full-time, friendly neighborhood Spider-Man is catapulted across the Multiverse, where he encounters the Spider Society, a team of Spider-People charged with protecting the Multiverse’s very existence. But when the heroes clash on how to handle a new threat, Miles finds himself pitted against the other Spiders and must set out on his own to save those he loves most."
+
+                },
+                {
+                    "id": 3,
+                    "title": "Doctor Strange in the Multiverse of Madness",
+                    "genre": "Fantasy, Action, Adventure",
+                    "releaseDate": "May 5, 2022",
+                    "duration": "2h 6m",
+                    "rating": "3.5",
+                    "imageName": "poster3",
+                    "category": "Popular Now",
+                    "synopsis": "Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary."
+
+                },
+                {
+                    "id": 6,
+                    "title": "The Bad Guys",
+                    "genre": "Animation, Action, Adventure, Crime, Comedy, Family",
+                    "releaseDate": "Mar 22, 2022",
+                    "duration": "2h 40m",
+                    "rating": "3.5",
+                    "imageName": "poster6",
+                    "category": "Popular Now",
+                    "synopsis": "The youngest of King Triton’s daughters, and the most defiant, Ariel longs to find out more about the world beyond the sea, and while visiting the surface, falls for the dashing Prince Eric. With mermaids forbidden to interact with humans, Ariel makes a deal with the evil sea witch, Ursula, which gives her a chance to experience life on land, but ultimately places her life – and her father’s crown – in jeopardy."
+
+                }
+            ]
+        }
+    },
+
+    {
+        "id": 2,
+        "cinema": {
+            "name": "Lenmarc",
+            "address": "Jl. Mayjend. Jonosewojo No.9, Pradahkalikendal, Kec. Dukuhpakis, Surabaya, Jawa Timur 60226",
+            "coordinates": {
+                "latitude": -7.285498381631056,
+                "longitude": 112.6808813235833
+            },
+            "films": [{
+                    "id": 2,
+                    "title": "The Little Mermaid",
+                    "genre": "Adventure, Family, Fantasy",
+                    "releaseDate": "May 17, 2023",
+                    "duration": "2h 15m",
+                    "rating": "3",
+                    "imageName": "poster2",
+                    "category": "Popular Now",
+                    "synopsis": "The youngest of King Triton’s daughters, and the most defiant, Ariel longs to find out more about the world beyond the sea, and while visiting the surface, falls for the dashing Prince Eric. With mermaids forbidden to interact with humans, Ariel makes a deal with the evil sea witch, Ursula, which gives her a chance to experience life on land, but ultimately places her life – and her father’s crown – in jeopardy."
+
+                },
+                {
+                    "id": 3,
+                    "title": "Doctor Strange in the Multiverse of Madness",
+                    "genre": "Fantasy, Action, Adventure",
+                    "releaseDate": "May 5, 2022",
+                    "duration": "2h 6m",
+                    "rating": "3.5",
+                    "imageName": "poster3",
+                    "category": "Popular Now",
+                    "synopsis": "Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary."
+
+                },
+                {
+                    "id": 5,
+                    "title": "Eiffel",
+                    "genre": "Adventure, Family, Fantasy",
+                    "releaseDate": "Oct 13, 2021",
+                    "duration": "1h 48m",
+                    "rating": "3",
+                    "imageName": "poster5",
+                    "category": "Popular Now",
+                    "synopsis": "The French government is asking Gustave Eiffel to design something spectacular for the 1889 Paris World Fair, but he simply wants to design the subway—until he crosses paths with a mysterious woman from his past."
+
+                }
+            ]
+        }
+    },
+    {
+        "id": 3,
+        "cinema": {
+            "name": "Pakuwon City Mall",
+            "address": "Jl. Raya Laguna KJW Putih Tambak No.2, Kejawaan Putih Tamba, Kec. Mulyorejo, Surabaya, Jawa Timur 60112",
+            "coordinates": {
+                "latitude": -7.276665525471563,
+                "longitude": 112.80612380397456
+            },
+            "films": [{
+                    "id": 3,
+                    "title": "Doctor Strange in the Multiverse of Madness",
+                    "genre": "Fantasy, Action, Adventure",
+                    "releaseDate": "May 5, 2022",
+                    "duration": "2h 6m",
+                    "rating": "3.5",
+                    "imageName": "poster3",
+                    "category": "Popular Now",
+                    "synopsis": "Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary."
+
+                },
+                {
+                    "id": 4,
+                    "title": "Uncharted",
+                    "genre": "Action, Adventure",
+                    "releaseDate": "Feb 18, 2022",
+                    "duration": "1h 56m",
+                    "rating": "3.5",
+                    "imageName": "poster4",
+                    "category": "Popular Now",
+                    "synopsis": "A young street-smart, Nathan Drake and his wisecracking partner Victor “Sully” Sullivan embark on a dangerous pursuit of “the greatest treasure never found” while also tracking clues that may lead to Nathan’s long-lost brother."
+
+                }
+            ]
+        }
+    },
+    {
+        "id": 4,
+        "cinema": {
+            "name": "Pakuwon Mall",
+            "address": "Jl. Mayjend. Jonosewojo No.2, Babatan, Kec. Wiyung, Surabaya, Jawa Timur 60227",
+            "coordinates": {
+                "latitude": -7.288971099792086,
+                "longitude": 112.6757018193189
+            },
+            "films": [{
+                    "id": 2,
+                    "title": "The Little Mermaid",
+                    "genre": "Adventure, Family, Fantasy",
+                    "releaseDate": "May 17, 2023",
+                    "duration": "2h 15m",
+                    "rating": "3",
+                    "imageName": "poster2",
+                    "category": "Popular Now",
+                    "synopsis": "The youngest of King Triton’s daughters, and the most defiant, Ariel longs to find out more about the world beyond the sea, and while visiting the surface, falls for the dashing Prince Eric. With mermaids forbidden to interact with humans, Ariel makes a deal with the evil sea witch, Ursula, which gives her a chance to experience life on land, but ultimately places her life – and her father’s crown – in jeopardy."
+
+                },
+                {
+                    "title": "Film B",
+                    "genre": "Comedy",
+                    "releaseDate": "2023-07-03",
+                    "duration": "1h 45m",
+                    "rating": "PG",
+                    "category": "Upcoming",
+                    "synopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                },
+                {
+                    "id": 6,
+                    "title": "The Bad Guys",
+                    "genre": "Animation, Action, Adventure, Crime, Comedy, Family",
+                    "releaseDate": "Mar 22, 2022",
+                    "duration": "2h 40m",
+                    "rating": "3.5",
+                    "imageName": "poster6",
+                    "category": "Popular Now",
+                    "synopsis": "The youngest of King Triton’s daughters, and the most defiant, Ariel longs to find out more about the world beyond the sea, and while visiting the surface, falls for the dashing Prince Eric. With mermaids forbidden to interact with humans, Ariel makes a deal with the evil sea witch, Ursula, which gives her a chance to experience life on land, but ultimately places her life – and her father’s crown – in jeopardy."
+
+                }
+            ]
+        }
+    },
+    {
+        "id": 5,
+        "cinema": {
+            "name": "PTC",
+            "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+            "coordinates": {
+                "latitude": -7.290683557812254,
+                "longitude": 112.67414660056485
+            },
+            "films": [{
+                    "id": 1,
+                    "title": "Spider-Man: Across the Spider-Verse",
+                    "genre": "Animation, Action, Adventure",
+                    "releaseDate": "May 31, 2023",
+                    "duration": "2h 16m",
+                    "rating": "4.3",
+                    "imageName": "poster1",
+                    "category": "Popular Now",
+                    "synopsis": "After reuniting with Gwen Stacy, Brooklyn’s full-time, friendly neighborhood Spider-Man is catapulted across the Multiverse, where he encounters the Spider Society, a team of Spider-People charged with protecting the Multiverse’s very existence. But when the heroes clash on how to handle a new threat, Miles finds himself pitted against the other Spiders and must set out on his own to save those he loves most."
+
+                },
+                {
+                    "id": 4,
+                    "title": "Uncharted",
+                    "genre": "Action, Adventure",
+                    "releaseDate": "Feb 18, 2022",
+                    "duration": "1h 56m",
+                    "rating": "3.5",
+                    "imageName": "poster4",
+                    "category": "Popular Now",
+                    "synopsis": "A young street-smart, Nathan Drake and his wisecracking partner Victor “Sully” Sullivan embark on a dangerous pursuit of “the greatest treasure never found” while also tracking clues that may lead to Nathan’s long-lost brother."
+
+                }
+            ]
+        }
+    },
+
+    {
+        "id": 6,
+        "cinema": {
+            "name": "Tunjungan Plaza",
+            "address": "Jl. Jenderal Basuki Rachmat No.8-12, Kedungdoro, Kec. Tegalsari, Surabaya, Jawa Timur 60261",
+            "coordinates": {
+                "latitude": -7.262187365683348,
+                "longitude": 112.7384216389267
+            },
+            "films": [{
+                    "id": 1,
+                    "title": "Spider-Man: Across the Spider-Verse",
+                    "genre": "Animation, Action, Adventure",
+                    "releaseDate": "May 31, 2023",
+                    "duration": "2h 16m",
+                    "rating": "4.3",
+                    "imageName": "poster1",
+                    "category": "Popular Now",
+                    "synopsis": "After reuniting with Gwen Stacy, Brooklyn’s full-time, friendly neighborhood Spider-Man is catapulted across the Multiverse, where he encounters the Spider Society, a team of Spider-People charged with protecting the Multiverse’s very existence. But when the heroes clash on how to handle a new threat, Miles finds himself pitted against the other Spiders and must set out on his own to save those he loves most."
+
+                },
+                {
+                    "id": 2,
+                    "title": "The Little Mermaid",
+                    "genre": "Adventure, Family, Fantasy",
+                    "releaseDate": "May 17, 2023",
+                    "duration": "2h 15m",
+                    "rating": "3",
+                    "imageName": "poster2",
+                    "category": "Popular Now",
+                    "synopsis": "The youngest of King Triton’s daughters, and the most defiant, Ariel longs to find out more about the world beyond the sea, and while visiting the surface, falls for the dashing Prince Eric. With mermaids forbidden to interact with humans, Ariel makes a deal with the evil sea witch, Ursula, which gives her a chance to experience life on land, but ultimately places her life – and her father’s crown – in jeopardy."
+
+                }
+            ]
+        }
+    },
+    {
+        "id": 7,
+        "cinema": {
+            "name": "Galaxy Mall",
+            "address": "Jl. Dharmahusada Indah Timur No.35-37, Mulyorejo, Kec. Mulyorejo, Surabaya, Jawa Timur 60115",
+            "coordinates": {
+                "latitude": -7.274570083023429,
+                "longitude": 112.78214171009114
+            },
+            "films": [{
+                    "id": 2,
+                    "title": "The Little Mermaid",
+                    "genre": "Adventure, Family, Fantasy",
+                    "releaseDate": "May 17, 2023",
+                    "duration": "2h 15m",
+                    "rating": "3",
+                    "imageName": "poster2",
+                    "category": "Popular Now",
+                    "synopsis": "The youngest of King Triton’s daughters, and the most defiant, Ariel longs to find out more about the world beyond the sea, and while visiting the surface, falls for the dashing Prince Eric. With mermaids forbidden to interact with humans, Ariel makes a deal with the evil sea witch, Ursula, which gives her a chance to experience life on land, but ultimately places her life – and her father’s crown – in jeopardy."
+
+                },
+                {
+                    "id": 5,
+                    "title": "Eiffel",
+                    "genre": "Adventure, Family, Fantasy",
+                    "releaseDate": "Oct 13, 2021",
+                    "duration": "1h 48m",
+                    "rating": "3",
+                    "imageName": "poster5",
+                    "category": "Popular Now",
+                    "synopsis": "The French government is asking Gustave Eiffel to design something spectacular for the 1889 Paris World Fair, but he simply wants to design the subway—until he crosses paths with a mysterious woman from his past."
+
+                }
+            ]
+        }
+    }
+
+
+]

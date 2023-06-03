@@ -17,6 +17,10 @@
 		0431E6782A286C4B00CF4FC6 /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0431E6772A286C4B00CF4FC6 /* CustomSearchBar.swift */; };
 		0431E67A2A286C9B00CF4FC6 /* ScrollSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0431E6792A286C9B00CF4FC6 /* ScrollSection.swift */; };
 		0431E67E2A28755E00CF4FC6 /* DetailFilm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0431E67D2A28755E00CF4FC6 /* DetailFilm.swift */; };
+		047A10432A2B1435002782FD /* MovieShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047A10422A2B1435002782FD /* MovieShow.swift */; };
+		047A10452A2B157F002782FD /* Cinema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047A10442A2B157F002782FD /* Cinema.swift */; };
+		047A10492A2B1BF6002782FD /* cinema.json in Resources */ = {isa = PBXBuildFile; fileRef = 047A10482A2B1BF6002782FD /* cinema.json */; };
+		047A104B2A2B1C04002782FD /* movieshow.json in Resources */ = {isa = PBXBuildFile; fileRef = 047A104A2A2B1C04002782FD /* movieshow.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 		0431E6772A286C4B00CF4FC6 /* CustomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
 		0431E6792A286C9B00CF4FC6 /* ScrollSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollSection.swift; sourceTree = "<group>"; };
 		0431E67D2A28755E00CF4FC6 /* DetailFilm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFilm.swift; sourceTree = "<group>"; };
+		047A10422A2B1435002782FD /* MovieShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieShow.swift; sourceTree = "<group>"; };
+		047A10442A2B157F002782FD /* Cinema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cinema.swift; sourceTree = "<group>"; };
+		047A10482A2B1BF6002782FD /* cinema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cinema.json; sourceTree = "<group>"; };
+		047A104A2A2B1C04002782FD /* movieshow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movieshow.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,7 @@
 		04184F922A1F3A8D00855711 /* mad_v1.0 */ = {
 			isa = PBXGroup;
 			children = (
+				047A10412A2B13AE002782FD /* Resources */,
 				04A5FC292A297BEE004D49E2 /* Model */,
 				04A5FC282A297BE6004D49E2 /* ViewModel */,
 				04A5FC272A297BDE004D49E2 /* View */,
@@ -79,6 +88,15 @@
 				04184F9A2A1F3A9000855711 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		047A10412A2B13AE002782FD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				047A104A2A2B1C04002782FD /* movieshow.json */,
+				047A10482A2B1BF6002782FD /* cinema.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		04A5FC272A297BDE004D49E2 /* View */ = {
@@ -105,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				0431E6732A28632300CF4FC6 /* Film.swift */,
+				047A10422A2B1435002782FD /* MovieShow.swift */,
+				047A10442A2B157F002782FD /* Cinema.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -176,6 +196,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				04184F9B2A1F3A9000855711 /* Preview Assets.xcassets in Resources */,
+				047A10492A2B1BF6002782FD /* cinema.json in Resources */,
+				047A104B2A2B1C04002782FD /* movieshow.json in Resources */,
 				04184F982A1F3A9000855711 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,8 +210,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0431E67E2A28755E00CF4FC6 /* DetailFilm.swift in Sources */,
+				047A10432A2B1435002782FD /* MovieShow.swift in Sources */,
 				04184F962A1F3A8D00855711 /* ContentView.swift in Sources */,
 				0410DBDC2A28EDA700335F5C /* ViewModel.swift in Sources */,
+				047A10452A2B157F002782FD /* Cinema.swift in Sources */,
 				0431E6742A28632300CF4FC6 /* Film.swift in Sources */,
 				0431E67A2A286C9B00CF4FC6 /* ScrollSection.swift in Sources */,
 				0431E6782A286C4B00CF4FC6 /* CustomSearchBar.swift in Sources */,

@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct Film : Identifiable, Hashable, Codable{
-    let id: UUID
+    let id: Int
     var title: String
     var genre: String
     var releaseDate: String
@@ -20,16 +20,16 @@ struct Film : Identifiable, Hashable, Codable{
     var synopsis: String
     
     
-    init(id: UUID = UUID(), title: String, genre: String, releaseDate: String, duration: String, rating: String, imageName: String, category: String, synopsis: String){
-        self.id = id
-        self.title = title
-        self.genre = genre
-        self.releaseDate = releaseDate
-        self.duration = duration
-        self.rating = rating
-        self.imageName = imageName
-        self.category = category
-        self.synopsis = synopsis
-    }
+//    init(id: Int, title: String, genre: String, releaseDate: String, duration: String, rating: String, imageName: String, category: String, synopsis: String){
+//        self.id = id
+//        self.title = title
+//        self.genre = genre
+//        self.releaseDate = releaseDate
+//        self.duration = duration
+//        self.rating = rating
+//        self.imageName = imageName
+//        self.category = category
+//        self.synopsis = synopsis
+//    }
 }
 

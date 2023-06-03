@@ -9,83 +9,55 @@ import Foundation
 import SwiftUI
 import Combine
 
-class ViewModel: ObservableObject {
-    @Published var films: [Film] = [
-        Film(
-            title: "Morbius",
-            genre: "Horror",
-            releaseDate: "March 10, 2022",
-            duration: "1h 44m",
-            rating: "4.1",
-            imageName: "poster1",
-            category: "Popular Now",
-            synopsis: "blabalalba"
-        ),
-        Film(
-            title: "Sonic the Hedgehog 2",
-            genre: "Adventure/Comedy",
-            releaseDate: "March 30, 2022",
-            duration: "2h 10m",
-            rating: "4.7",
-            imageName: "poster2",
-            category: "Popular Now",
-            synopsis: "yegfads"
-        ),
-        Film(
-            title: "Doctor Strange Multiverse of Madness",
-            genre: "Action/Adventure",
-            releaseDate: "May 2, 2022",
-            duration: "2h 6m",
-            rating: "3.5",
-            imageName: "poster3",
-            category: "Popular Now",
-            synopsis: "dfmakfa"
-        ),
-        Film(
-            title: "Doctor Strange Multiverse of Madness",
-            genre: "Action/Adventure",
-            releaseDate: "May 2, 2022",
-            duration: "2h 6m",
-            rating: "3.5",
-            imageName: "poster7",
-            category: "Now in Cinema",
-            synopsis: "fejae"
-        ),
-        Film(
-            title: "Doctor Strange Multiverse of Madness",
-            genre: "Action/Adventure",
-            releaseDate: "May 2, 2022",
-            duration: "2h 6m",
-            rating: "3.5",
-            imageName: "poster13",
-            category: "Coming Soon",
-            synopsis: "epqorir3"
-        ),
-    ]
-    @Published var popularNowFilms: [Film] = []
-    @Published var comingSoonFilms: [Film] = []
-    @Published var nowPlayingFilms: [Film] = []
-    @Published var favoriteFilms: [Film] = []
+final class ViewModel: ObservableObject {
+    
+    @Published var movieshows: [MovieShow] = load("movieshow.json")
+    @Published var popularNowFilms: [MovieShow] = []
+    @Published var comingSoonFilms: [MovieShow] = []
+    @Published var nowPlayingFilms: [MovieShow] = []
     
     private var cancellables: Set<AnyCancellable> = []
     
     init() {
         loadFilms()
     }
+    //method yang mengambil JSON data
     
     func loadFilms() {
         
         // Categorize films
-        popularNowFilms = films.filter { film in
-            film.category == "Popular Now"
+        popularNowFilms = movieshows.filter { ms in
+            ms.film.category == "Popular Now"
         }
-        nowPlayingFilms = films.filter { film in
-            film.category == "Now in Cinema"
+        nowPlayingFilms = movieshows.filter { ms in
+            ms.film.category == "Now in Cinema"
         }
-        comingSoonFilms = films.filter { film in
-            film.category == "Coming Soon"
+        comingSoonFilms = movieshows.filter { ms in
+            ms.film.category == "Coming Soon"
         }
         
-        favoriteFilms = [films.first, films.last].compactMap { $0 }
+//        favoriteFilms = [movieshows.first, movieshows.last].compactMap { $0 }
+    }
+}
+
+func load<T: Decodable>(_ filename: String) -> T {
+    let data: Data
+    
+    guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
+    else {
+        fatalError("Couldn't find \(filename) in main bundle.")
+    }
+    
+    do {
+        data = try Data(contentsOf: file)
+    } catch {
+        fatalError("Couldn't load \(filename) from main bundle:\n\(error)")
+    }
+    
+    do {
+        let decoder = JSONDecoder()
+        return try decoder.decode(T.self, from: data)
+    } catch {
+        fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
     }
 }

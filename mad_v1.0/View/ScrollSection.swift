@@ -13,7 +13,7 @@ struct ScrollSection: View {
     //    @State var posters: [String] = ["poster1", "poster2", "poster3", "poster4", "poster5", "poster6"]
     
     var categoryName : String
-    var films: [Film]
+    var films: [MovieShow]
     
 //    @Binding var selectedFilmID: UUID?
     
@@ -28,9 +28,12 @@ struct ScrollSection: View {
                 HStack(spacing: 20.0) {
                     ForEach(films) { film in
                         NavigationLink {
-                            DetailFilm(film: film)
+                            DetailFilm(ms: film)
                         } label: {
-                            Image(film.imageName)
+                            Image(film.film.imageName)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height: 258)
                         }
                     }
                     
@@ -44,10 +47,10 @@ struct ScrollSection: View {
 
 struct ScrollSection_Previews: PreviewProvider {
     
-    static var films = ViewModel().films
+    static var films = ViewModel().movieshows
     
     static var previews: some View {
-        ScrollSection(categoryName: films[0].category,
+        ScrollSection(categoryName: films[0].film.category,
                       films: Array(films.prefix(2))
         )
     }

@@ -1,0 +1,610 @@
+[
+  {
+    "id": 1,
+    "film": {
+      "id": 1,
+      "title": "Spider-Man: Across the Spider-Verse",
+      "genre": "Animation, Action, Adventure",
+      "releaseDate": "May 31, 2023",
+      "duration": "2h 16m",
+      "rating": "4.3",
+      "imageName": "poster1",
+      "category": "Popular Now",
+      "synopsis": "After reuniting with Gwen Stacy, Brooklyn’s full-time, friendly neighborhood Spider-Man is catapulted across the Multiverse, where he encounters the Spider Society, a team of Spider-People charged with protecting the Multiverse’s very existence. But when the heroes clash on how to handle a new threat, Miles finds himself pitted against the other Spiders and must set out on his own to save those he loves most."
+    },
+    "cinema": [
+      {
+        "name": "Ciputra World",
+        "address": "Jl. Mayjen Sungkono No.89, Gn. Sari, Kec. Dukuhpakis, Surabaya, Jawa Timur 60225",
+        "coordinates": {
+          "latitude": -7.293442343525911,
+          "longitude": 112.7192663846563
+        }
+      },
+      {
+        "name": "PTC",
+        "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+        "coordinates": {
+          "latitude": -7.290683557812254,
+          "longitude": 112.67414660056485
+        }
+      },
+      {
+        "name": "Tunjungan Plaza",
+        "address": "Jl. Jenderal Basuki Rachmat No.8-12, Kedungdoro, Kec. Tegalsari, Surabaya, Jawa Timur 60261",
+        "coordinates": {
+          "latitude": -7.262187365683348,
+          "longitude": 112.7384216389267
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "film": {
+      "id": 2,
+      "title": "The Little Mermaid",
+      "genre": "Adventure, Family, Fantasy",
+      "releaseDate": "May 17, 2023",
+      "duration": "2h 15m",
+      "rating": "3",
+      "imageName": "poster2",
+      "category": "Popular Now",
+      "synopsis": "The youngest of King Triton’s daughters, and the most defiant, Ariel longs to find out more about the world beyond the sea, and while visiting the surface, falls for the dashing Prince Eric. With mermaids forbidden to interact with humans, Ariel makes a deal with the evil sea witch, Ursula, which gives her a chance to experience life on land, but ultimately places her life – and her father’s crown – in jeopardy."
+    },
+    "cinema": [
+      {
+        "name": "Lenmarc",
+        "address": "Jl. Mayjend. Jonosewojo No.9, Pradahkalikendal, Kec. Dukuhpakis, Surabaya, Jawa Timur 60226",
+        "coordinates": {
+          "latitude": -7.285498381631056,
+          "longitude": 112.6808813235833
+        }
+      },
+      {
+        "name": "Pakuwon Mall",
+        "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+        "coordinates": {
+          "latitude": -7.290683557812254,
+          "longitude": 112.67414660056485
+        }
+      },
+      {
+        "name": "Tunjungan Plaza",
+        "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+        "coordinates": {
+          "latitude": -7.290683557812254,
+          "longitude": 112.67414660056485
+        }
+      },
+      {
+        "name": "Galaxy Mall",
+        "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+        "coordinates": {
+          "latitude": -7.290683557812254,
+          "longitude": 112.67414660056485
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "film": {
+      "id": 3,
+      "title": "Doctor Strange in the Multiverse of Madness",
+      "genre": "Fantasy, Action, Adventure",
+      "releaseDate": "May 5, 2022",
+      "duration": "2h 6m",
+      "rating": "3.5",
+      "imageName": "poster3",
+      "category": "Popular Now",
+      "synopsis": "Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary."
+    },
+    "cinema": [
+      {
+        "name": "Ciputra World",
+        "address": "Jl. Mayjen Sungkono No.89, Gn. Sari, Kec. Dukuhpakis, Surabaya, Jawa Timur 60225",
+        "coordinates": {
+          "latitude": -7.293442343525911,
+          "longitude": 112.7192663846563
+        }
+      },
+      {
+        "name": "Lenmarc",
+        "address": "Jl. Mayjend. Jonosewojo No.9, Pradahkalikendal, Kec. Dukuhpakis, Surabaya, Jawa Timur 60226",
+        "coordinates": {
+          "latitude": -7.285498381631056,
+          "longitude": 112.6808813235833
+        }
+      },
+      {
+        "name": "Pakuwon City Mall",
+        "address": "Jl. Raya Laguna KJW Putih Tambak No.2, Kejawaan Putih Tamba, Kec. Mulyorejo, Surabaya, Jawa Timur 60112",
+        "coordinates": {
+          "latitude": -7.276665525471563,
+          "longitude": 112.80612380397456
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "film": {
+      "id": 4,
+      "title": "Uncharted",
+      "genre": "Action, Adventure",
+      "releaseDate": "Feb 18, 2022",
+      "duration": "1h 56m",
+      "rating": "3.5",
+      "imageName": "poster4",
+      "category": "Popular Now",
+      "synopsis": "A young street-smart, Nathan Drake and his wisecracking partner Victor “Sully” Sullivan embark on a dangerous pursuit of “the greatest treasure never found” while also tracking clues that may lead to Nathan’s long-lost brother."
+    },
+    "cinema": [
+      {
+        "name": "Pakuwon City Mall",
+        "address": "Jl. Raya Laguna KJW Putih Tambak No.2, Kejawaan Putih Tamba, Kec. Mulyorejo, Surabaya, Jawa Timur 60112",
+        "coordinates": {
+          "latitude": -7.276665525471563,
+          "longitude": 112.80612380397456
+        }
+      },
+      {
+        "name": "PTC",
+        "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+        "coordinates": {
+          "latitude": -7.290683557812254,
+          "longitude": 112.67414660056485
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "film": {
+      "id": 5,
+      "title": "Eiffel",
+      "genre": "Adventure, Family, Fantasy",
+      "releaseDate": "Oct 13, 2021",
+      "duration": "1h 48m",
+      "rating": "3",
+      "imageName": "poster5",
+      "category": "Popular Now",
+      "synopsis": "The French government is asking Gustave Eiffel to design something spectacular for the 1889 Paris World Fair, but he simply wants to design the subway—until he crosses paths with a mysterious woman from his past."
+    },
+    "cinema": [
+      {
+        "name": "Lenmarc",
+        "address": "Jl. Mayjend. Jonosewojo No.9, Pradahkalikendal, Kec. Dukuhpakis, Surabaya, Jawa Timur 60226",
+        "coordinates": {
+          "latitude": -7.285498381631056,
+          "longitude": 112.6808813235833
+        }
+      },
+      {
+        "name": "Galaxy Mall",
+        "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+        "coordinates": {
+          "latitude": -7.290683557812254,
+          "longitude": 112.67414660056485
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "film": {
+      "id": 6,
+      "title": "The Bad Guys",
+      "genre": "Animation, Action, Adventure, Crime, Comedy, Family",
+      "releaseDate": "Mar 22, 2022",
+      "duration": "2h 40m",
+      "rating": "3.5",
+      "imageName": "poster6",
+      "category": "Popular Now",
+      "synopsis": "The youngest of King Triton’s daughters, and the most defiant, Ariel longs to find out more about the world beyond the sea, and while visiting the surface, falls for the dashing Prince Eric. With mermaids forbidden to interact with humans, Ariel makes a deal with the evil sea witch, Ursula, which gives her a chance to experience life on land, but ultimately places her life – and her father’s crown – in jeopardy."
+    },
+    "cinema": [
+      {
+        "name": "Ciputra World",
+        "address": "Jl. Mayjen Sungkono No.89, Gn. Sari, Kec. Dukuhpakis, Surabaya, Jawa Timur 60225",
+        "coordinates": {
+          "latitude": -7.293442343525911,
+          "longitude": 112.7192663846563
+        }
+      },
+      {
+        "name": "Pakuwon Mall",
+        "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+        "coordinates": {
+          "latitude": -7.290683557812254,
+          "longitude": 112.67414660056485
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "film": {
+      "id": 7,
+      "title": "Fast X",
+      "genre": "Action, Crime",
+      "releaseDate": "May 2023, 17",
+      "duration": "2h 21m",
+      "rating": "3.6",
+      "imageName": "poster7",
+      "category": "Now in Cinema",
+      "synopsis": "Over many missions and against impossible odds, Dom Toretto and his family have outsmarted, out-nerved and outdriven every foe in their path. Now, they confront the most lethal opponent they've ever faced: A terrifying threat emerging from the shadows of the past who's fueled by blood revenge, and who is determined to shatter this family and destroy everything—and everyone—that Dom loves, forever."
+    },
+    "cinema": [
+      {
+        "name": "PTC",
+        "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+        "coordinates": {
+          "latitude": -7.290683557812254,
+          "longitude": 112.67414660056485
+        }
+      },
+      {
+        "name": "Pakuwon Mall",
+        "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+        "coordinates": {
+          "latitude": -7.290683557812254,
+          "longitude": 112.67414660056485
+        }
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "film": {
+      "id": 8,
+      "title": "Black Panther 2",
+      "genre": "Action, Adventure, Science Fiction",
+      "releaseDate": "Nov 9, 2022",
+      "duration": "2h 42m",
+      "rating": "3.6",
+      "imageName": "poster8",
+      "category": "Now in Cinema",
+      "synopsis": "Queen Ramonda, Shuri, M’Baku, Okoye and the Dora Milaje fight to protect their nation from intervening world powers in the wake of King T’Challa’s death. As the Wakandans strive to embrace their next chapter, the heroes must band together with the help of War Dog Nakia and Everett Ross and forge a new path for the kingdom of Wakanda."
+    },
+    "cinema": [
+      {
+        "name": "PTC",
+        "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+        "coordinates": {
+          "latitude": -7.290683557812254,
+          "longitude": 112.67414660056485
+        }
+      },
+      {
+        "name": "Pakuwon Mall",
+        "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+        "coordinates": {
+          "latitude": -7.290683557812254,
+          "longitude": 112.67414660056485
+        }
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "film": {
+      "id": 9,
+      "title": "Avatar 2",
+      "genre": "Science Fiction, Adventure, Action",
+      "releaseDate": "Dec 16, 2022",
+      "duration": "3h 12m",
+      "rating": "3.6",
+      "imageName": "poster9",
+      "category": "Now in Cinema",
+      "synopsis": "Set more than a decade after the events of the first film, learn the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure."
+    },
+    "cinema": [
+      {
+        "name": "PTC",
+        "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+        "coordinates": {
+          "latitude": -7.290683557812254,
+          "longitude": 112.67414660056485
+        }
+      },
+      {
+        "name": "Pakuwon Mall",
+        "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+        "coordinates": {
+          "latitude": -7.290683557812254,
+          "longitude": 112.67414660056485
+        }
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "film": {
+      "id": 10,
+      "title": "Thor: Love and Thunder",
+      "genre": "Fantasy, Action, Comedy",
+      "releaseDate": "Jul 6, 2022",
+      "duration": "1h 59m",
+      "rating": "3.5",
+      "imageName": "poster10",
+      "category": "Now in Cinema",
+      "synopsis": "After his retirement is interrupted by Gorr the God Butcher, a galactic killer who seeks the extinction of the gods, Thor Odinson enlists the help of King Valkyrie, Korg, and ex-girlfriend Jane Foster, who now wields Mjolnir as the Mighty Thor. Together they embark upon a harrowing cosmic adventure to uncover the mystery of the God Butcher’s vengeance and stop him before it’s too late."
+    },
+    "cinema": [
+      {
+        "name": "PTC",
+        "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+        "coordinates": {
+          "latitude": -7.290683557812254,
+          "longitude": 112.67414660056485
+        }
+      },
+      {
+        "name": "Pakuwon Mall",
+        "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+        "coordinates": {
+          "latitude": -7.290683557812254,
+          "longitude": 112.67414660056485
+        }
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "film": {
+      "id": 11,
+      "title": "Sonic The Hedgedog 2",
+      "genre": "Action, Adventure, Family, Comedy",
+      "releaseDate": "Apr 6, 2022",
+      "duration": "2h 2m",
+      "rating": "3.5",
+      "imageName": "poster11",
+      "category": "Now in Cinema",
+      "synopsis": "After settling in Green Hills, Sonic is eager to prove he has what it takes to be a true hero. His test comes when Dr. Robotnik returns, this time with a new partner, Knuckles, in search for an emerald that has the power to destroy civilizations. Sonic teams up with his own sidekick, Tails, and together they embark on a globe-trotting journey to find the emerald before it falls into the wrong hands."
+    },
+    "cinema": [
+      {
+        "name": "PTC",
+        "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+        "coordinates": {
+          "latitude": -7.290683557812254,
+          "longitude": 112.67414660056485
+        }
+      },
+      {
+        "name": "Pakuwon Mall",
+        "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+        "coordinates": {
+          "latitude": -7.290683557812254,
+          "longitude": 112.67414660056485
+        }
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "film": {
+      "id": 12,
+      "title": "Black Adam",
+      "genre": "Action, Adventure, Science Fiction, Fantasy",
+      "releaseDate": "Oct 11, 2022",
+      "duration": "2h 4m",
+      "rating": "3",
+      "imageName": "poster12",
+      "category": "Now in Cinema",
+      "synopsis": "Nearly 5,000 years after he was bestowed with the almighty powers of the Egyptian gods—and imprisoned just as quickly—Black Adam is freed from his earthly tomb, ready to unleash his unique form of justice on the modern world."
+    },
+    "cinema": [
+      {
+        "name": "PTC",
+        "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+        "coordinates": {
+          "latitude": -7.290683557812254,
+          "longitude": 112.67414660056485
+        }
+      },
+      {
+        "name": "Pakuwon Mall",
+        "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+        "coordinates": {
+          "latitude": -7.290683557812254,
+          "longitude": 112.67414660056485
+        }
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "film": {
+      "id": 13,
+      "title": "The Batman",
+      "genre": "Crime, Mystery, Thriller",
+      "releaseDate": "Mar 10, 2022",
+      "duration": "2h 57m",
+      "rating": "4.5",
+      "imageName": "poster13",
+      "category": "Coming Soon",
+      "synopsis": "In his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family while facing a serial killer known as the Riddler."
+    },
+    "cinema": [
+      {
+        "name": "PTC",
+        "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+        "coordinates": {
+          "latitude": -7.290683557812254,
+          "longitude": 112.67414660056485
+        }
+      },
+      {
+        "name": "Pakuwon Mall",
+        "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+        "coordinates": {
+          "latitude": -7.290683557812254,
+          "longitude": 112.67414660056485
+        }
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "film": {
+      "id": 14,
+      "title": "Father Stu",
+      "genre": "Drama",
+      "releaseDate": "Apr 13, 2022",
+      "duration": "2h 4m",
+      "rating": "",
+      "imageName": "poster14",
+      "category": "Coming Soon",
+      "synopsis": "The true-life story of boxer-turned-priest. When an injury ends his amateur boxing career, Stuart Long moves to Los Angeles to find money and fame. While scraping by as a supermarket clerk, he meets Carmen, a Sunday school teacher who seems immune to his bad-boy charm. Determined to win her over, the longtime agnostic starts going to church to impress her. However, a motorcycle accident leaves him wondering if he can use his second chance to help others, leading to the surprising realization that he's meant to be a Catholic priest."
+    },
+    "cinema": [
+      {
+        "name": "PTC",
+        "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+        "coordinates": {
+          "latitude": -7.290683557812254,
+          "longitude": 112.67414660056485
+        }
+      },
+      {
+        "name": "Pakuwon Mall",
+        "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+        "coordinates": {
+          "latitude": -7.290683557812254,
+          "longitude": 112.67414660056485
+        }
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "film": {
+      "id": 15,
+      "title": "Avatar 2",
+      "genre": " Thriller, Drama",
+      "releaseDate": "Feb 18, 2022",
+      "duration": "1h 59m",
+      "rating": "",
+      "imageName": "poster15",
+      "category": "Coming Soon",
+      "synopsis": "The story of Vincent Lacroix, a businessman convicted of defrauding thousands of investors and embezzling over $130 million in mid-2000s Quebec, Canada. Inspector and auditor Éric Asselin is mandated to monitor the activities of the Norbourg firm. Literally fascinated by the audacity of Vincent Lacroix, the investigator leaves his post and becomes his right hand man. Norbourg then thwarts the investigations and checks by embezzling hundreds of millions of dollars. But the party can't last forever when the company is surrounded from all sides."
+    },
+    "cinema": [
+      {
+        "name": "PTC",
+        "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+        "coordinates": {
+          "latitude": -7.290683557812254,
+          "longitude": 112.67414660056485
+        }
+      },
+      {
+        "name": "Pakuwon Mall",
+        "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+        "coordinates": {
+          "latitude": -7.290683557812254,
+          "longitude": 112.67414660056485
+        }
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "film": {
+      "id": 16,
+      "title": "Rabbit Academy: Mission Eggpossible",
+      "genre": "Animation, Adventure, Comedy",
+      "releaseDate": "Mar 17, 2022",
+      "duration": "1h 15m",
+      "rating": "",
+      "imageName": "poster16",
+      "category": "Coming Soon",
+      "synopsis": "Max, a city rabbit, reaches his goal of joining the master class for Easter rabbits but when the magical golden egg turns black, Max and his friends must act to save Easter being taken over by a family of foxes."
+    },
+    "cinema": [
+      {
+        "name": "PTC",
+        "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+        "coordinates": {
+          "latitude": -7.290683557812254,
+          "longitude": 112.67414660056485
+        }
+      },
+      {
+        "name": "Pakuwon Mall",
+        "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+        "coordinates": {
+          "latitude": -7.290683557812254,
+          "longitude": 112.67414660056485
+        }
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "film": {
+      "id": 17,
+      "title": "Morbius",
+      "genre": "Action, Science Fiction, Fantasy",
+      "releaseDate": "Jan 4, 2022",
+      "duration": "1h 45m",
+      "rating": "",
+      "imageName": "poster17",
+      "category": "Coming Soon",
+      "synopsis": "Dangerously ill with a rare blood disorder, and determined to save others suffering his same fate, Dr. Michael Morbius attempts a desperate gamble. What at first appears to be a radical success soon reveals itself to be a remedy potentially worse than the disease."
+    },
+    "cinema": [
+      {
+        "name": "PTC",
+        "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+        "coordinates": {
+          "latitude": -7.290683557812254,
+          "longitude": 112.67414660056485
+        }
+      },
+      {
+        "name": "Pakuwon Mall",
+        "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+        "coordinates": {
+          "latitude": -7.290683557812254,
+          "longitude": 112.67414660056485
+        }
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "film": {
+      "id": 18,
+      "title": "The Lost City",
+      "genre": "Action, Adventure, Comedy",
+      "releaseDate": "Mar 25, 2022",
+      "duration": "1h 52m",
+      "rating": "",
+      "imageName": "poster18",
+      "category": "Coming Soon",
+      "synopsis": "Reclusive author Loretta Sage writes about exotic places in her popular adventure novels that feature a handsome cover model named Alan. While on tour promoting her new book with Alan, Loretta gets kidnapped by an eccentric billionaire who hopes she can lead him to the ancient city's lost treasure that featured in her latest story. Alan, determined to prove he can be a hero in real life and not just on the pages of her books, sets off to rescue her."
+    },
+    "cinema": [
+      {
+        "name": "PTC",
+        "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+        "coordinates": {
+          "latitude": -7.290683557812254,
+          "longitude": 112.67414660056485
+        }
+      },
+      {
+        "name": "Pakuwon Mall",
+        "address": "Jl. Raya Lontar No.2, Babatan, Kec. Wiyung, Surabaya",
+        "coordinates": {
+          "latitude": -7.290683557812254,
+          "longitude": 112.67414660056485
+        }
+      }
+    ]
+  }
+]
