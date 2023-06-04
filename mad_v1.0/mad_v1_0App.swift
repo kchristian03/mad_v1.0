@@ -13,6 +13,7 @@ struct mad_v1_0App: App {
         WindowGroup {
             ContentView()
 //            HomeView()
+//            DetailView()
         }
     }
 }
