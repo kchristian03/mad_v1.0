@@ -8,28 +8,32 @@
 import SwiftUI
 
 struct SeatGridView: View {
-    let columns = 1...9
-    let rows = ["A", "B", "C", "D", "E"]
+    let columns = ["A", "B", "C", "D", "E", "F", "_", "G", "H", "I"]
+    let rows = 1...5
     
     var body: some View {
-        VStack(spacing: 10) {
-            ForEach(rows, id: \.self) { row in
-                HStack(spacing: 10) {
+        ScrollView {
+            LazyVGrid(columns: gridLayout(), spacing: 10) {
+                ForEach(rows, id: \.self) { row in
                     ForEach(columns, id: \.self) { column in
-                        SeatView(column: column, row: row)
+                        SeaterView(column: column, row: row)
+                            .opacity(column == "_" ? 0 : 1)
                     }
                 }
             }
+            .padding()
         }
-        .padding()
+    }
+    
+    private func gridLayout() -> [GridItem] {
+        Array(repeating: GridItem(.flexible(), spacing: 10), count: columns.count)
     }
 }
 
-
-struct SeatView: View {
+struct SeaterView: View {
     @State private var buttonColor: Color = .white
-    let column: Int
-    let row: String
+    let column: String
+    let row: Int
     
     var body: some View {
         Button(action: {
@@ -40,28 +44,15 @@ struct SeatView: View {
                 buttonColor = .green
             }
         }) {
-            HStack {
+            VStack {
                 Image(systemName: "chair.lounge.fill")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 30, height: 30)
-                    .foregroundColor(buttonColor)
-                
+                    .font(.headline)
+                Text("\(column)\(row)")
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
-//            .padding()
-            .foregroundColor(.white)
-//            .background(Color.blue)
-            .cornerRadius(10)
+            .foregroundColor(buttonColor)
         }
-        //        Image(systemName: "chair.lounge.fill")
-        //            .resizable()
-        //            .aspectRatio(contentMode: .fit)
-        //            .frame(width: 30, height: 30)
-        //            .foregroundColor(Color.black)
-        //        Text("\(column)\(row)")
-        //            .frame(width: 30, height: 30)
-        //            .background(Color.blue)
-        //            .foregroundColor(.white)
+        
     }
 }
 
