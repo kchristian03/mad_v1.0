@@ -21,6 +21,10 @@
 		047A10452A2B157F002782FD /* Cinema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047A10442A2B157F002782FD /* Cinema.swift */; };
 		047A10492A2B1BF6002782FD /* cinema.json in Resources */ = {isa = PBXBuildFile; fileRef = 047A10482A2B1BF6002782FD /* cinema.json */; };
 		047A104B2A2B1C04002782FD /* movieshow.json in Resources */ = {isa = PBXBuildFile; fileRef = 047A104A2A2B1C04002782FD /* movieshow.json */; };
+		14A1418F2A2C99E800F37596 /* ProfileVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A1418E2A2C99E800F37596 /* ProfileVIew.swift */; };
+		14A141912A2C9A1900F37596 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A141902A2C9A1900F37596 /* User.swift */; };
+		14A141932A2C9AA800F37596 /* DetailVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A141922A2C9AA800F37596 /* DetailVIew.swift */; };
+		14A141962A2C9AE900F37596 /* TIketVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A141952A2C9AE900F37596 /* TIketVIew.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +43,10 @@
 		047A10442A2B157F002782FD /* Cinema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cinema.swift; sourceTree = "<group>"; };
 		047A10482A2B1BF6002782FD /* cinema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cinema.json; sourceTree = "<group>"; };
 		047A104A2A2B1C04002782FD /* movieshow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movieshow.json; sourceTree = "<group>"; };
+		14A1418E2A2C99E800F37596 /* ProfileVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVIew.swift; sourceTree = "<group>"; };
+		14A141902A2C9A1900F37596 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		14A141922A2C9AA800F37596 /* DetailVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVIew.swift; sourceTree = "<group>"; };
+		14A141952A2C9AE900F37596 /* TIketVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TIketVIew.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +133,7 @@
 				0431E6732A28632300CF4FC6 /* Film.swift */,
 				047A10422A2B1435002782FD /* MovieShow.swift */,
 				047A10442A2B157F002782FD /* Cinema.swift */,
+				14A141902A2C9A1900F37596 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -133,6 +142,9 @@
 			isa = PBXGroup;
 			children = (
 				0431E6772A286C4B00CF4FC6 /* CustomSearchBar.swift */,
+				14A1418E2A2C99E800F37596 /* ProfileVIew.swift */,
+				14A141922A2C9AA800F37596 /* DetailVIew.swift */,
+				14A141952A2C9AE900F37596 /* TIketVIew.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -210,14 +222,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				0431E67E2A28755E00CF4FC6 /* DetailFilm.swift in Sources */,
+				14A1418F2A2C99E800F37596 /* ProfileVIew.swift in Sources */,
 				047A10432A2B1435002782FD /* MovieShow.swift in Sources */,
 				04184F962A1F3A8D00855711 /* ContentView.swift in Sources */,
+				14A141962A2C9AE900F37596 /* TIketVIew.swift in Sources */,
 				0410DBDC2A28EDA700335F5C /* ViewModel.swift in Sources */,
 				047A10452A2B157F002782FD /* Cinema.swift in Sources */,
 				0431E6742A28632300CF4FC6 /* Film.swift in Sources */,
 				0431E67A2A286C9B00CF4FC6 /* ScrollSection.swift in Sources */,
+				14A141912A2C9A1900F37596 /* User.swift in Sources */,
 				0431E6782A286C4B00CF4FC6 /* CustomSearchBar.swift in Sources */,
 				0431E6722A28579E00CF4FC6 /* HomeView.swift in Sources */,
+				14A141932A2C9AA800F37596 /* DetailVIew.swift in Sources */,
 				04184F942A1F3A8D00855711 /* mad_v1_0App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
