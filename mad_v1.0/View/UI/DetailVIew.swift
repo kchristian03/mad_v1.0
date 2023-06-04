@@ -37,6 +37,7 @@ struct DetailView: View {
                     
                     Text("2h 10m")
                         .font(.headline)
+                        .padding(15)
                 }
                 .padding()
                 
@@ -62,65 +63,68 @@ struct DetailView: View {
                 
                 ScrollView(.horizontal, showsIndicators: true) {
                     HStack(spacing: 10) {
-                                   ForEach(0..<10) { index in
-                                       VStack {
-                                           Rectangle()
-                                           //untuk merubah background warna rectangle menjadi putih pada di tekan
-                                               .foregroundColor(selectedRectangleIndex == index ? .white : .black)
-                                               .frame(width: 60, height: 80)
-                                               .cornerRadius(10)
-                                               .padding(.bottom)
-                                               .overlay(
-                                                   VStack {
-                                                       Text(getDayOfWeek(for: index))
-                                                           .font(.headline)
-                                                       //untuk merubah background warna text menjadi hitam pada di tekan
-                                                           .foregroundColor(selectedRectangleIndex == index ? .black : .white)
-                                                           .multilineTextAlignment(.center)
-                                                       
-                                                       Text(getDate(for: index))
-                                                           .font(.headline)
-                                                           .foregroundColor(selectedRectangleIndex == index ? .black : .white)
-                                                           .multilineTextAlignment(.center)
-                                                   }
-                                                   .padding(.bottom)
-                                               )
-                                               .onTapGesture {
-                                                   showReservationAlert = true
-                                                   selectedRectangleIndex = index
-                                               }
-                                           
-                                           Rectangle()
-                                           //untuk merubah background warna rectangle menjadi putih pada di tekan
-                                               .foregroundColor(selectedRectangleIndex == index ? .white : .black)
-                                               .frame(width: 80, height: 40)
-                                               .cornerRadius(10)
-                                               .overlay(
-                                                   VStack {
-                                                       Text(getTime(for: index))
-                                                           .font(.headline)
-                                                       //untuk merubah background warna text menjadi hitam pada di tekan
-                                                           .foregroundColor(selectedRectangleIndex == index ? .black : .white)
-                                                           .multilineTextAlignment(.center)
-                                                       
-                                                   }
-                                               )
-                                               .onTapGesture {
-                                                   showReservationAlert = true
-                                                   selectedRectangleIndex = index
-
-                                               }
-                                       }
-                                   }
-                               }
-                       .padding(.horizontal)
+                        ForEach(0..<10) { index in
+                            VStack {
+                                Rectangle()
+                                //untuk merubah background warna rectangle menjadi putih pada di tekan
+                                    .foregroundColor(selectedRectangleIndex == index ? .white : .black)
+                                    .frame(width: 60, height: 80)
+                                    .cornerRadius(10)
+                                    .padding(.bottom)
+                                    .overlay(
+                                        VStack {
+                                            Text(getDayOfWeek(for: index))
+                                                .font(.headline)
+                                            //untuk merubah background warna text menjadi hitam pada di tekan
+                                                .foregroundColor(selectedRectangleIndex == index ? .black : .white)
+                                                .multilineTextAlignment(.center)
+                                            
+                                            Text(getDate(for: index))
+                                                .font(.headline)
+                                                .foregroundColor(selectedRectangleIndex == index ? .black : .white)
+                                                .multilineTextAlignment(.center)
+                                        }
+                                            .padding(.bottom)
+                                    )
+                                    .onTapGesture {
+                                        showReservationAlert = true
+                                        selectedRectangleIndex = index
+                                    }
+                                
+                                Rectangle()
+                                //untuk merubah background warna rectangle menjadi putih pada di tekan
+                                    .foregroundColor(selectedRectangleIndex == index ? .white : .black)
+                                    .frame(width: 80, height: 40)
+                                    .cornerRadius(10)
+                                    .overlay(
+                                        VStack {
+                                            Text(getTime(for: index))
+                                                .font(.headline)
+                                            //untuk merubah background warna text menjadi hitam pada di tekan
+                                                .foregroundColor(selectedRectangleIndex == index ? .black : .white)
+                                                .multilineTextAlignment(.center)
+                                            
+                                        }
+                                    )
+                                    .onTapGesture {
+                                        showReservationAlert = true
+                                        selectedRectangleIndex = index
+                                        
+                                    }
+                                    Spacer()
+                            }
+                            
+                            
+                        }
+                        
+                    }
+                    
                     .padding(.vertical)
                 }
                 .alert(isPresented: $showReservationAlert, content: {
-                            Alert(title: Text("Reservation"), message: nil, primaryButton: .default(Text("Reservation"), action: {
-                                // Handle reservation button tapped
-                            }), secondaryButton: .cancel())
-                        })
+                    Alert(title: Text("Reservation"), message: nil, primaryButton: .default(Text("Reservation"), action: {
+                    }), secondaryButton: .cancel())
+                })
                 .frame(width: 350)
             }
             .frame(width: 400, height: 400)
@@ -136,7 +140,7 @@ struct DetailView: View {
         let daysOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
         return daysOfWeek[index % daysOfWeek.count]
     }
-
+    
     //untuk random waktunya
     func getTime(for index: Int) -> String {
         let times = ["10:00", "12:30", "15:45", "18:00", "20:15"]
@@ -154,7 +158,7 @@ struct DetailView: View {
         
         return dateFormatter.string(from: date!)
     }
-
+    
     
     
     
