@@ -24,13 +24,14 @@ struct HomeView: View {
                     ScrollSection(categoryName: "Popular Now 🔥", films: filmViewModel.popularNowFilms)
                     ScrollSection(categoryName: "Now Playing", films: filmViewModel.nowPlayingFilms)
                     ScrollSection(categoryName: "Coming Soon", films: filmViewModel.comingSoonFilms)
-                        
+                    
                 }
                 .padding(.bottom, 90)
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .background(Color("backgroundPrimary").ignoresSafeArea())
+        .navigationBarBackButtonHidden(true)
     }
 }
 
