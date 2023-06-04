@@ -20,6 +20,8 @@
 		0472D5902A2C504C0074477D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472D58F2A2C504C0074477D /* User.swift */; };
 		0472D5922A2C51150074477D /* splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472D5912A2C51150074477D /* splash.swift */; };
 		0472D5942A2C81580074477D /* authView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472D5932A2C81580074477D /* authView.swift */; };
+		0472D5962A2CB41E0074477D /* ReservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472D5952A2CB41E0074477D /* ReservationView.swift */; };
+		0472D5982A2CDA220074477D /* SeatGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472D5972A2CDA220074477D /* SeatGridView.swift */; };
 		047A10432A2B1435002782FD /* MovieShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047A10422A2B1435002782FD /* MovieShow.swift */; };
 		047A10452A2B157F002782FD /* Cinema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047A10442A2B157F002782FD /* Cinema.swift */; };
 		047A10492A2B1BF6002782FD /* cinema.json in Resources */ = {isa = PBXBuildFile; fileRef = 047A10482A2B1BF6002782FD /* cinema.json */; };
@@ -41,6 +43,8 @@
 		0472D58F2A2C504C0074477D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0472D5912A2C51150074477D /* splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splash.swift; sourceTree = "<group>"; };
 		0472D5932A2C81580074477D /* authView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = authView.swift; sourceTree = "<group>"; };
+		0472D5952A2CB41E0074477D /* ReservationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationView.swift; sourceTree = "<group>"; };
+		0472D5972A2CDA220074477D /* SeatGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatGridView.swift; sourceTree = "<group>"; };
 		047A10422A2B1435002782FD /* MovieShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieShow.swift; sourceTree = "<group>"; };
 		047A10442A2B157F002782FD /* Cinema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cinema.swift; sourceTree = "<group>"; };
 		047A10482A2B1BF6002782FD /* cinema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cinema.json; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 				04184F952A1F3A8D00855711 /* ContentView.swift */,
 				0472D5912A2C51150074477D /* splash.swift */,
 				0472D5932A2C81580074477D /* authView.swift */,
+				0472D5952A2CB41E0074477D /* ReservationView.swift */,
+				0472D5972A2CDA220074477D /* SeatGridView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -227,9 +233,11 @@
 				047A10452A2B157F002782FD /* Cinema.swift in Sources */,
 				0431E6742A28632300CF4FC6 /* Film.swift in Sources */,
 				0431E67A2A286C9B00CF4FC6 /* ScrollSection.swift in Sources */,
+				0472D5962A2CB41E0074477D /* ReservationView.swift in Sources */,
 				0431E6782A286C4B00CF4FC6 /* CustomSearchBar.swift in Sources */,
 				0431E6722A28579E00CF4FC6 /* HomeView.swift in Sources */,
 				04184F942A1F3A8D00855711 /* mad_v1_0App.swift in Sources */,
+				0472D5982A2CDA220074477D /* SeatGridView.swift in Sources */,
 				0472D5902A2C504C0074477D /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
