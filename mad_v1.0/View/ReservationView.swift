@@ -26,7 +26,7 @@ struct ReservationView: View {
                     .foregroundColor(.white)
                 
                 SeatGridView()
-                    .frame(width: UIScreen.main.bounds.size.width)
+                    .frame(width: UIScreen.main.bounds.size.width, height: 300)
                     
                     
                 HStack{
