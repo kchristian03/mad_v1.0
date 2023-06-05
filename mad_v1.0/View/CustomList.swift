@@ -27,9 +27,11 @@ struct CustomList: View {
                             HStack {
                                 Text(cinemaName)
                                     .foregroundColor(.black)
+                                    .bold()
                                 Spacer()
                                 Image(systemName: "greaterthan")
                                     .foregroundColor(.black)
+                                    .bold()
                             }
                             .padding(.horizontal)
                         }

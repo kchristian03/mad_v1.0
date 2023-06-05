@@ -15,38 +15,53 @@ struct LocationView: View {
             ZStack {
                 Color("backgroundPrimary").edgesIgnoringSafeArea(.all)
                 
-                ScrollView {
+                VStack {
                     
-                    VStack(alignment: .leading) {
+                    ScrollView {
                         
-                        CustomList(cinemaName: "Ye")
-                        CustomList(cinemaName: "Ye")
-                        CustomList(cinemaName: "Ye")
+                        HStack {
+                            Text("Lokasi")
+                                .font(.largeTitle)
+                                .bold()
+                                .foregroundColor(.white)
+                                .padding(.horizontal)
+                            Spacer()
+                        }
                         
-                        Spacer()
+                        VStack {
+                            
+                            CustomList(cinemaName: "Ye")
+                            CustomList(cinemaName: "Ye")
+                            CustomList(cinemaName: "Ye")
+                            
+                            Spacer()
+                        }
+                        .padding(.top)
+                        
                     }
-                    .padding(.top, 30)
-                    .navigationTitle("Lokasi")
                     
                 }
+                .padding(.top)
                 
             }
             
-//            .toolbar {
-//                ToolbarItem(placement: .navigationBarLeading) {
-//                    Text("Lokasi")
-//                        .font(.largeTitle)
-//                        .fontWeight(.bold)
-//                        .foregroundColor(.white)
-//                        .padding(.top, 50)
-//                }
-//            }
+            
+            //            .toolbar {
+            //                ToolbarItem(placement: .navigationBarLeading) {
+            //                    Text("Lokasi")
+            //                        .font(.largeTitle)
+            //                        .fontWeight(.bold)
+            //                        .foregroundColor(.white)
+            //                        .padding(.top, 50)
+            //                }
+            //            }
             
         }
         .onAppear {
             cinemaViewModel.loadCinema()
         }
     }
+    
 }
 
 struct LocationView_Previews: PreviewProvider {

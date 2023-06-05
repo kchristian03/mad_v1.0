@@ -32,6 +32,10 @@
 		04B6486C2A2DFE550036618B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6486B2A2DFE550036618B /* ProfileView.swift */; };
 		04B6486E2A2DFF020036618B /* TiketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6486D2A2DFF020036618B /* TiketView.swift */; };
 		04B648712A2E15240036618B /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6486F2A2E15240036618B /* LocationView.swift */; };
+		04B648742A2E1BEC0036618B /* DetailLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B648732A2E1BEC0036618B /* DetailLocationView.swift */; };
+		04B648762A2E59820036618B /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B648752A2E59820036618B /* MapViewModel.swift */; };
+		04B648782A2E63A20036618B /* CustomScrollSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B648772A2E63A20036618B /* CustomScrollSection.swift */; };
+		04B6487A2A2E6B3E0036618B /* ScheduleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B648792A2E6B3E0036618B /* ScheduleComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +65,10 @@
 		04B6486B2A2DFE550036618B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		04B6486D2A2DFF020036618B /* TiketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiketView.swift; sourceTree = "<group>"; };
 		04B6486F2A2E15240036618B /* LocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		04B648732A2E1BEC0036618B /* DetailLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailLocationView.swift; sourceTree = "<group>"; };
+		04B648752A2E59820036618B /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		04B648772A2E63A20036618B /* CustomScrollSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollSection.swift; sourceTree = "<group>"; };
+		04B648792A2E6B3E0036618B /* ScheduleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +143,9 @@
 				0472D5932A2C81580074477D /* authView.swift */,
 				0472D5952A2CB41E0074477D /* ReservationView.swift */,
 				0472D5972A2CDA220074477D /* SeatGridView.swift */,
+				04B648732A2E1BEC0036618B /* DetailLocationView.swift */,
+				04B648772A2E63A20036618B /* CustomScrollSection.swift */,
+				04B648792A2E6B3E0036618B /* ScheduleComponent.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -144,6 +155,7 @@
 			children = (
 				0410DBDB2A28EDA700335F5C /* ViewModel.swift */,
 				043BD9A42A2CD2B600F22972 /* CinemaViewModel.swift */,
+				04B648752A2E59820036618B /* MapViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -242,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B648742A2E1BEC0036618B /* DetailLocationView.swift in Sources */,
 				0431E67E2A28755E00CF4FC6 /* DetailFilm.swift in Sources */,
 				043BD9A52A2CD2B600F22972 /* CinemaViewModel.swift in Sources */,
 				043BD9A92A2CD2DD00F22972 /* CustomList.swift in Sources */,
@@ -252,13 +265,16 @@
 				0410DBDC2A28EDA700335F5C /* ViewModel.swift in Sources */,
 				04B6486E2A2DFF020036618B /* TiketView.swift in Sources */,
 				047A10452A2B157F002782FD /* Cinema.swift in Sources */,
+				04B648762A2E59820036618B /* MapViewModel.swift in Sources */,
 				0431E6742A28632300CF4FC6 /* Film.swift in Sources */,
+				04B6487A2A2E6B3E0036618B /* ScheduleComponent.swift in Sources */,
 				0431E67A2A286C9B00CF4FC6 /* ScrollSection.swift in Sources */,
 				04B6486C2A2DFE550036618B /* ProfileView.swift in Sources */,
 				0472D5962A2CB41E0074477D /* ReservationView.swift in Sources */,
 				0431E6782A286C4B00CF4FC6 /* CustomSearchBar.swift in Sources */,
 				0431E6722A28579E00CF4FC6 /* HomeView.swift in Sources */,
 				04B648712A2E15240036618B /* LocationView.swift in Sources */,
+				04B648782A2E63A20036618B /* CustomScrollSection.swift in Sources */,
 				04184F942A1F3A8D00855711 /* mad_v1_0App.swift in Sources */,
 				04B6486A2A2DFC930036618B /* DetailView.swift in Sources */,
 				0472D5982A2CDA220074477D /* SeatGridView.swift in Sources */,
