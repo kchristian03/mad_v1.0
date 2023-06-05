@@ -17,6 +17,9 @@
 		0431E6782A286C4B00CF4FC6 /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0431E6772A286C4B00CF4FC6 /* CustomSearchBar.swift */; };
 		0431E67A2A286C9B00CF4FC6 /* ScrollSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0431E6792A286C9B00CF4FC6 /* ScrollSection.swift */; };
 		0431E67E2A28755E00CF4FC6 /* DetailFilm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0431E67D2A28755E00CF4FC6 /* DetailFilm.swift */; };
+		043BD9A52A2CD2B600F22972 /* CinemaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BD9A42A2CD2B600F22972 /* CinemaViewModel.swift */; };
+		043BD9A82A2CD2DD00F22972 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BD9A62A2CD2DD00F22972 /* LocationView.swift */; };
+		043BD9A92A2CD2DD00F22972 /* CustomList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BD9A72A2CD2DD00F22972 /* CustomList.swift */; };
 		0472D5902A2C504C0074477D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472D58F2A2C504C0074477D /* User.swift */; };
 		0472D5922A2C51150074477D /* splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472D5912A2C51150074477D /* splash.swift */; };
 		0472D5942A2C81580074477D /* authView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472D5932A2C81580074477D /* authView.swift */; };
@@ -40,6 +43,9 @@
 		0431E6772A286C4B00CF4FC6 /* CustomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
 		0431E6792A286C9B00CF4FC6 /* ScrollSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollSection.swift; sourceTree = "<group>"; };
 		0431E67D2A28755E00CF4FC6 /* DetailFilm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFilm.swift; sourceTree = "<group>"; };
+		043BD9A42A2CD2B600F22972 /* CinemaViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CinemaViewModel.swift; sourceTree = "<group>"; };
+		043BD9A62A2CD2DD00F22972 /* LocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationView.swift; path = mad_v1.0/View/LocationView.swift; sourceTree = SOURCE_ROOT; };
+		043BD9A72A2CD2DD00F22972 /* CustomList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomList.swift; path = mad_v1.0/View/CustomList.swift; sourceTree = SOURCE_ROOT; };
 		0472D58F2A2C504C0074477D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0472D5912A2C51150074477D /* splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splash.swift; sourceTree = "<group>"; };
 		0472D5932A2C81580074477D /* authView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = authView.swift; sourceTree = "<group>"; };
@@ -114,6 +120,8 @@
 			children = (
 				04A5FC2A2A297C67004D49E2 /* UI */,
 				0431E6712A28579E00CF4FC6 /* HomeView.swift */,
+				043BD9A72A2CD2DD00F22972 /* CustomList.swift */,
+				043BD9A62A2CD2DD00F22972 /* LocationView.swift */,
 				0431E6792A286C9B00CF4FC6 /* ScrollSection.swift */,
 				0431E67D2A28755E00CF4FC6 /* DetailFilm.swift */,
 				04184F952A1F3A8D00855711 /* ContentView.swift */,
@@ -129,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				0410DBDB2A28EDA700335F5C /* ViewModel.swift */,
+				043BD9A42A2CD2B600F22972 /* CinemaViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -225,11 +234,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0431E67E2A28755E00CF4FC6 /* DetailFilm.swift in Sources */,
+				043BD9A52A2CD2B600F22972 /* CinemaViewModel.swift in Sources */,
+				043BD9A92A2CD2DD00F22972 /* CustomList.swift in Sources */,
 				047A10432A2B1435002782FD /* MovieShow.swift in Sources */,
 				0472D5922A2C51150074477D /* splash.swift in Sources */,
 				04184F962A1F3A8D00855711 /* ContentView.swift in Sources */,
 				0472D5942A2C81580074477D /* authView.swift in Sources */,
 				0410DBDC2A28EDA700335F5C /* ViewModel.swift in Sources */,
+				043BD9A82A2CD2DD00F22972 /* LocationView.swift in Sources */,
 				047A10452A2B157F002782FD /* Cinema.swift in Sources */,
 				0431E6742A28632300CF4FC6 /* Film.swift in Sources */,
 				0431E67A2A286C9B00CF4FC6 /* ScrollSection.swift in Sources */,
