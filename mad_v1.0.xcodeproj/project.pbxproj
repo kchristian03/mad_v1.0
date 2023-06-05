@@ -29,6 +29,9 @@
 		047A10452A2B157F002782FD /* Cinema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047A10442A2B157F002782FD /* Cinema.swift */; };
 		047A10492A2B1BF6002782FD /* cinema.json in Resources */ = {isa = PBXBuildFile; fileRef = 047A10482A2B1BF6002782FD /* cinema.json */; };
 		047A104B2A2B1C04002782FD /* movieshow.json in Resources */ = {isa = PBXBuildFile; fileRef = 047A104A2A2B1C04002782FD /* movieshow.json */; };
+		04B6486A2A2DFC930036618B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B648692A2DFC930036618B /* DetailView.swift */; };
+		04B6486C2A2DFE550036618B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6486B2A2DFE550036618B /* ProfileView.swift */; };
+		04B6486E2A2DFF020036618B /* TiketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6486D2A2DFF020036618B /* TiketView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +58,9 @@
 		047A10442A2B157F002782FD /* Cinema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cinema.swift; sourceTree = "<group>"; };
 		047A10482A2B1BF6002782FD /* cinema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cinema.json; sourceTree = "<group>"; };
 		047A104A2A2B1C04002782FD /* movieshow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movieshow.json; sourceTree = "<group>"; };
+		04B648692A2DFC930036618B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		04B6486B2A2DFE550036618B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		04B6486D2A2DFF020036618B /* TiketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiketView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +163,9 @@
 			isa = PBXGroup;
 			children = (
 				0431E6772A286C4B00CF4FC6 /* CustomSearchBar.swift */,
+				04B648692A2DFC930036618B /* DetailView.swift */,
+				04B6486B2A2DFE550036618B /* ProfileView.swift */,
+				04B6486D2A2DFF020036618B /* TiketView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -242,13 +251,16 @@
 				0472D5942A2C81580074477D /* authView.swift in Sources */,
 				0410DBDC2A28EDA700335F5C /* ViewModel.swift in Sources */,
 				043BD9A82A2CD2DD00F22972 /* LocationView.swift in Sources */,
+				04B6486E2A2DFF020036618B /* TiketView.swift in Sources */,
 				047A10452A2B157F002782FD /* Cinema.swift in Sources */,
 				0431E6742A28632300CF4FC6 /* Film.swift in Sources */,
 				0431E67A2A286C9B00CF4FC6 /* ScrollSection.swift in Sources */,
+				04B6486C2A2DFE550036618B /* ProfileView.swift in Sources */,
 				0472D5962A2CB41E0074477D /* ReservationView.swift in Sources */,
 				0431E6782A286C4B00CF4FC6 /* CustomSearchBar.swift in Sources */,
 				0431E6722A28579E00CF4FC6 /* HomeView.swift in Sources */,
 				04184F942A1F3A8D00855711 /* mad_v1_0App.swift in Sources */,
+				04B6486A2A2DFC930036618B /* DetailView.swift in Sources */,
 				0472D5982A2CDA220074477D /* SeatGridView.swift in Sources */,
 				0472D5902A2C504C0074477D /* User.swift in Sources */,
 			);
