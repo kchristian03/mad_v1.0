@@ -39,12 +39,12 @@ struct SeatGridView: View {
                 }
             }
             .padding()
-//            Text("Selected Seats: \(selectedSeats.count)")
-//                .font(.headline)
-//                .padding()
-//            ForEach(selectedSeats) { seating in
-//                Text(seating.id)
-//            }
+//                        Text("Selected Seats: \(selectedSeats.count)")
+//                            .font(.headline)
+//                            .padding()
+//                        ForEach(selectedSeats) { seating in
+//                            Text(seating.id)
+//                        }
         }
         
         

@@ -10,8 +10,6 @@ import SwiftUI
 struct ReservationView: View {
     @EnvironmentObject var filmViewModel: ViewModel
     var ms: MovieShow
-    @State private var selectedSeats: [SelectedSeat] = []
-    
     var body: some View {
         ZStack{
             Image(ms.film.imageName)
@@ -20,13 +18,11 @@ struct ReservationView: View {
                 .edgesIgnoringSafeArea(.all)
                 .overlay(Color.white.opacity(0.7))
             VStack{
-//                @Binding var selectedSeats: [SelectedSeat]
-                
                 Text("Reservation")
                     .font(.title)
                     .bold()
                     .foregroundColor(.black)
-                SeatGridView(selectedSeats: selectedSeats)
+                SeatGridView()
                     .padding()
                     .frame(width: UIScreen.main.bounds.size.width)
                     .background(
@@ -66,16 +62,6 @@ struct ReservationView: View {
                         .opacity(0.5)
                         .frame(minWidth: UIScreen.main.bounds.size.width)
                 )
-                
-                
-                Text("Selected Seats: \(selectedSeats.count)")
-                    .font(.headline)
-                    .padding()
-
-                ForEach(SeatGridView().selectedSeats) { seating in
-                    Text(seating.id)
-                }
-                
                 Spacer()
             }
         }
