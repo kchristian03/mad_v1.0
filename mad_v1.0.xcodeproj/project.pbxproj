@@ -36,6 +36,10 @@
 		04B648762A2E59820036618B /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B648752A2E59820036618B /* MapViewModel.swift */; };
 		04B648782A2E63A20036618B /* CustomScrollSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B648772A2E63A20036618B /* CustomScrollSection.swift */; };
 		04B6487A2A2E6B3E0036618B /* ScheduleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B648792A2E6B3E0036618B /* ScheduleComponent.swift */; };
+		04DCF7B02A2E91B30044674E /* PaymentChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCF7AF2A2E91B30044674E /* PaymentChoice.swift */; };
+		04DCF7B22A2E91DF0044674E /* PaymentSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCF7B12A2E91DF0044674E /* PaymentSuccess.swift */; };
+		04DCF7B92A2E99080044674E /* TabPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCF7B82A2E99080044674E /* TabPlace.swift */; };
+		04DCF7BB2A2E9EA20044674E /* CheckAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCF7BA2A2E9EA20044674E /* CheckAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +73,10 @@
 		04B648752A2E59820036618B /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		04B648772A2E63A20036618B /* CustomScrollSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollSection.swift; sourceTree = "<group>"; };
 		04B648792A2E6B3E0036618B /* ScheduleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleComponent.swift; sourceTree = "<group>"; };
+		04DCF7AF2A2E91B30044674E /* PaymentChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentChoice.swift; sourceTree = "<group>"; };
+		04DCF7B12A2E91DF0044674E /* PaymentSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSuccess.swift; sourceTree = "<group>"; };
+		04DCF7B82A2E99080044674E /* TabPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPlace.swift; sourceTree = "<group>"; };
+		04DCF7BA2A2E9EA20044674E /* CheckAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +154,7 @@
 				04B648732A2E1BEC0036618B /* DetailLocationView.swift */,
 				04B648772A2E63A20036618B /* CustomScrollSection.swift */,
 				04B648792A2E6B3E0036618B /* ScheduleComponent.swift */,
+				04DCF7B82A2E99080044674E /* TabPlace.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -176,8 +185,11 @@
 			children = (
 				0431E6772A286C4B00CF4FC6 /* CustomSearchBar.swift */,
 				04B648692A2DFC930036618B /* DetailView.swift */,
+				04DCF7AF2A2E91B30044674E /* PaymentChoice.swift */,
+				04DCF7B12A2E91DF0044674E /* PaymentSuccess.swift */,
 				04B6486B2A2DFE550036618B /* ProfileView.swift */,
 				04B6486D2A2DFF020036618B /* TiketView.swift */,
+				04DCF7BA2A2E9EA20044674E /* CheckAnimation.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -255,7 +267,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				04B648742A2E1BEC0036618B /* DetailLocationView.swift in Sources */,
+				04DCF7BB2A2E9EA20044674E /* CheckAnimation.swift in Sources */,
 				0431E67E2A28755E00CF4FC6 /* DetailFilm.swift in Sources */,
+				04DCF7B02A2E91B30044674E /* PaymentChoice.swift in Sources */,
 				043BD9A52A2CD2B600F22972 /* CinemaViewModel.swift in Sources */,
 				043BD9A92A2CD2DD00F22972 /* CustomList.swift in Sources */,
 				047A10432A2B1435002782FD /* MovieShow.swift in Sources */,
@@ -263,8 +277,10 @@
 				04184F962A1F3A8D00855711 /* ContentView.swift in Sources */,
 				0472D5942A2C81580074477D /* authView.swift in Sources */,
 				0410DBDC2A28EDA700335F5C /* ViewModel.swift in Sources */,
+				04DCF7B22A2E91DF0044674E /* PaymentSuccess.swift in Sources */,
 				04B6486E2A2DFF020036618B /* TiketView.swift in Sources */,
 				047A10452A2B157F002782FD /* Cinema.swift in Sources */,
+				04DCF7B92A2E99080044674E /* TabPlace.swift in Sources */,
 				04B648762A2E59820036618B /* MapViewModel.swift in Sources */,
 				0431E6742A28632300CF4FC6 /* Film.swift in Sources */,
 				04B6487A2A2E6B3E0036618B /* ScheduleComponent.swift in Sources */,

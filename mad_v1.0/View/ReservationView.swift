@@ -89,8 +89,9 @@ struct ReservationView: View {
                                 let a = money(count: seatsSelected.count)
                                 Text("\(a)")
                             }
+                            
                             Button(action: {
-                                
+                                PaymentChoice()
                             }){
                                 Text("Reservation")
                             }
