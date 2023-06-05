@@ -18,17 +18,13 @@ struct ReservationView: View {
                 .aspectRatio(contentMode: .fill)
                 .edgesIgnoringSafeArea(.all)
                 .overlay(Color.black.opacity(0.5))
-
             VStack{
                 Text("Reservation")
                     .font(.title)
                     .bold()
                     .foregroundColor(.white)
-                
                 SeatGridView()
                     .frame(width: UIScreen.main.bounds.size.width, height: 300)
-                    
-                    
                 HStack{
                     Image(systemName: "chair.lounge.fill")
                         .resizable()
@@ -51,15 +47,10 @@ struct ReservationView: View {
                         .foregroundColor(.green)
                     Text("Selected")
                         .foregroundColor(.white)
-                    
                 }
-                
                 Spacer()
-                
-
             }
         }
-        
     }
 }
 
