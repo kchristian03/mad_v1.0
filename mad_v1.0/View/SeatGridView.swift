@@ -26,10 +26,19 @@ struct SeatGridView: View {
         [.available, .available, .available, .reserved, .available, .reserved, .null, .available, .available, .reserved]
     ]
     
-    @State var selectedSeats: [SelectedSeat] = []
+    @Binding var selectedSeats: [SelectedSeat]
     
     var body: some View {
         VStack {
+            HStack(alignment: .center) {
+                Text("SCREEN")
+                    .foregroundColor(.white)
+            }
+            .padding()
+            .frame(width: 300, height: 24)
+            .background(.black)
+            .cornerRadius(6)
+            
             LazyVGrid(columns: gridLayout(), spacing: 10) {
                 ForEach(rows, id: \.self) { row in
                     ForEach(columns.indices, id: \.self) { index in
@@ -56,7 +65,7 @@ struct SeatGridView: View {
 }
 
 struct SeaterView: View {
-    @State private var buttonColor: Color = Color(#colorLiteral(red: 0.85, green: 0.85, blue: 0.85, alpha: 1))
+    @State private var buttonColor: Color = .black
     let column: String
     let row: Int
     let status: SeatStatus
@@ -65,7 +74,7 @@ struct SeaterView: View {
     var body: some View {
         Button(action: {
             if status == .available {
-                buttonColor = buttonColor == Color(#colorLiteral(red: 0.85, green: 0.85, blue: 0.85, alpha: 1)) ? .green : Color(#colorLiteral(red: 0.85, green: 0.85, blue: 0.85, alpha: 1))
+                buttonColor = buttonColor == .black ? .green : .black
                 if let index = selectedSeats.firstIndex(where: { $0.column == column && $0.row == row }) {
                     selectedSeats.remove(at: index) // Deselect the seat
                 } else {
@@ -93,6 +102,6 @@ enum SeatStatus {
 
 struct SeatGridView_Previews: PreviewProvider {
     static var previews: some View {
-        SeatGridView()
+        SeatGridView(selectedSeats: .constant([]))
     }
 }
