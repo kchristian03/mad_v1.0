@@ -7,6 +7,14 @@
 
 import SwiftUI
 
+struct SelectedSeat: Hashable, Identifiable {
+    var column: String
+    var row: Int
+    var id: String {
+        "\(column)\(row)"
+    }
+}
+
 struct SeatGridView: View {
     let columns = ["A", "B", "C", "D", "E", "F", "_", "G", "H", "I"]
     let rows = 1...5
@@ -16,20 +24,30 @@ struct SeatGridView: View {
         [.available, .available, .available, .available, .reserved, .available, .null, .reserved, .available, .reserved],
         [.available, .reserved, .reserved, .available, .available, .available, .null, .available, .available, .reserved],
         [.available, .available, .available, .reserved, .available, .reserved, .null, .available, .available, .reserved]
-        ]
+    ]
+    
+    @State var selectedSeats: [SelectedSeat] = []
     
     var body: some View {
-        ScrollView {
+        VStack {
             LazyVGrid(columns: gridLayout(), spacing: 10) {
                 ForEach(rows, id: \.self) { row in
                     ForEach(columns.indices, id: \.self) { index in
-                        SeaterView(column: columns[index], row: row, status: seatStatuses[row-1][index])
+                        SeaterView(column: columns[index], row: row, status: seatStatuses[row-1][index], selectedSeats: $selectedSeats)
                             .opacity(columns[index] == "_" ? 0 : 1)
                     }
                 }
             }
             .padding()
+//            Text("Selected Seats: \(selectedSeats.count)")
+//                .font(.headline)
+//                .padding()
+//            ForEach(selectedSeats) { seating in
+//                Text(seating.id)
+//            }
         }
+        
+        
     }
     
     private func gridLayout() -> [GridItem] {
@@ -37,25 +55,22 @@ struct SeatGridView: View {
     }
 }
 
-enum SeatStatus {
-    case reserved
-    case available
-    case null
-}
-
 struct SeaterView: View {
-    @State private var buttonColor: Color = .white
+    @State private var buttonColor: Color = Color(#colorLiteral(red: 0.85, green: 0.85, blue: 0.85, alpha: 1))
     let column: String
     let row: Int
     let status: SeatStatus
+    @Binding var selectedSeats: [SelectedSeat]
     
     var body: some View {
         Button(action: {
-            // Add your button action here
             if status == .available {
-                buttonColor = buttonColor == .white ? .green : .white
-            } else if status == .reserved {
-                buttonColor = .red
+                buttonColor = buttonColor == Color(#colorLiteral(red: 0.85, green: 0.85, blue: 0.85, alpha: 1)) ? .green : Color(#colorLiteral(red: 0.85, green: 0.85, blue: 0.85, alpha: 1))
+                if let index = selectedSeats.firstIndex(where: { $0.column == column && $0.row == row }) {
+                    selectedSeats.remove(at: index) // Deselect the seat
+                } else {
+                    selectedSeats.append(SelectedSeat(column: column, row: row))
+                }
             }
         }) {
             VStack {
@@ -67,8 +82,13 @@ struct SeaterView: View {
             .foregroundColor(status == .available ? buttonColor : Color.red)
         }
         .disabled(status == .reserved)
-        
     }
+}
+
+enum SeatStatus {
+    case reserved
+    case available
+    case null
 }
 
 struct SeatGridView_Previews: PreviewProvider {
