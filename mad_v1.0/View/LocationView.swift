@@ -11,50 +11,17 @@ struct LocationView: View {
     @ObservedObject var cinemaViewModel: CinemaViewModel
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 Color("backgroundPrimary").edgesIgnoringSafeArea(.all)
                 
-                VStack {
-                    
-                    ScrollView {
-                        
-                        HStack {
-                            Text("Lokasi")
-                                .font(.largeTitle)
-                                .bold()
-                                .foregroundColor(.white)
-                                .padding(.horizontal)
-                            Spacer()
-                        }
-                        
-                        VStack {
-                            
-                            CustomList(cinemaName: "Ye")
-                            CustomList(cinemaName: "Ye")
-                            CustomList(cinemaName: "Ye")
-                            
-                            Spacer()
-                        }
-                        .padding(.top)
-                        
-                    }
-                    
+                if UIDevice.current.userInterfaceIdiom == .pad {
+                    iPadLayout
+                } else {
+                    iPhoneLayout
                 }
-                .padding(.top)
                 
             }
-            
-            
-            //            .toolbar {
-            //                ToolbarItem(placement: .navigationBarLeading) {
-            //                    Text("Lokasi")
-            //                        .font(.largeTitle)
-            //                        .fontWeight(.bold)
-            //                        .foregroundColor(.white)
-            //                        .padding(.top, 50)
-            //                }
-            //            }
             
         }
         .onAppear {
@@ -62,11 +29,71 @@ struct LocationView: View {
         }
     }
     
+    @ViewBuilder
+    var iPadLayout: some View {
+        VStack {
+            HStack {
+                Text("Lokasi")
+                    .font(.largeTitle)
+                    .bold()
+                    .foregroundColor(.white)
+                    .padding(.horizontal)
+                Spacer()
+            }
+            .padding(.horizontal)
+            .padding(.top, 30)
+            
+            ScrollView {
+                
+                
+                VStack {
+                    CustomList(cinemaName: "Ye")
+                    CustomList(cinemaName: "Ye")
+                    CustomList(cinemaName: "Ye")
+                    Spacer()
+                }
+                .padding(.top)
+            }
+            .padding(.horizontal)
+        }
+        .padding(.top)
+    }
+    
+    @ViewBuilder
+    var iPhoneLayout: some View {
+        VStack {
+            ScrollView {
+                HStack {
+                    Text("Lokasi")
+                        .font(.largeTitle)
+                        .bold()
+                        .foregroundColor(.white)
+                        .padding(.horizontal)
+                    Spacer()
+                }
+                
+                VStack {
+                    CustomList(cinemaName: "Ye")
+                    CustomList(cinemaName: "Ye")
+                    CustomList(cinemaName: "Ye")
+                    Spacer()
+                }
+                .padding(.top)
+            }
+        }
+        .padding(.top)
+    }
+    
 }
 
 struct LocationView_Previews: PreviewProvider {
     static var previews: some View {
-        let cinemaViewModel = CinemaViewModel()
-        return LocationView(cinemaViewModel: cinemaViewModel)
+        Group {
+            LocationView(cinemaViewModel: CinemaViewModel())
+                .previewDevice("iPhone 13")
+            
+            LocationView(cinemaViewModel: CinemaViewModel())
+                .previewDevice("iPad Pro (12.9-inch) (5th generation)")
+        }
     }
 }
