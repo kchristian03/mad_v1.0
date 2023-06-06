@@ -28,6 +28,10 @@
 		047A10452A2B157F002782FD /* Cinema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047A10442A2B157F002782FD /* Cinema.swift */; };
 		047A10492A2B1BF6002782FD /* cinema.json in Resources */ = {isa = PBXBuildFile; fileRef = 047A10482A2B1BF6002782FD /* cinema.json */; };
 		047A104B2A2B1C04002782FD /* movieshow.json in Resources */ = {isa = PBXBuildFile; fileRef = 047A104A2A2B1C04002782FD /* movieshow.json */; };
+		049ECDEE2A2ECB99004ACA5E /* TabPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049ECDED2A2ECB99004ACA5E /* TabPlace.swift */; };
+		049ECDF02A2ECBF0004ACA5E /* CheckAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049ECDEF2A2ECBF0004ACA5E /* CheckAnimation.swift */; };
+		049ECDF22A2ECC3D004ACA5E /* PaymentChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049ECDF12A2ECC3D004ACA5E /* PaymentChoice.swift */; };
+		049ECDF42A2ECCAA004ACA5E /* PaymentSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049ECDF32A2ECCAA004ACA5E /* PaymentSuccess.swift */; };
 		04B6486A2A2DFC930036618B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B648692A2DFC930036618B /* DetailView.swift */; };
 		04B6486C2A2DFE550036618B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6486B2A2DFE550036618B /* ProfileView.swift */; };
 		04B6486E2A2DFF020036618B /* TiketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6486D2A2DFF020036618B /* TiketView.swift */; };
@@ -62,6 +66,10 @@
 		047A10442A2B157F002782FD /* Cinema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cinema.swift; sourceTree = "<group>"; };
 		047A10482A2B1BF6002782FD /* cinema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cinema.json; sourceTree = "<group>"; };
 		047A104A2A2B1C04002782FD /* movieshow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movieshow.json; sourceTree = "<group>"; };
+		049ECDED2A2ECB99004ACA5E /* TabPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPlace.swift; sourceTree = "<group>"; };
+		049ECDEF2A2ECBF0004ACA5E /* CheckAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckAnimation.swift; sourceTree = "<group>"; };
+		049ECDF12A2ECC3D004ACA5E /* PaymentChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentChoice.swift; sourceTree = "<group>"; };
+		049ECDF32A2ECCAA004ACA5E /* PaymentSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSuccess.swift; sourceTree = "<group>"; };
 		04B648692A2DFC930036618B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		04B6486B2A2DFE550036618B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		04B6486D2A2DFF020036618B /* TiketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiketView.swift; sourceTree = "<group>"; };
@@ -149,6 +157,10 @@
 				04B648772A2E63A20036618B /* CustomScrollSection.swift */,
 				04B648792A2E6B3E0036618B /* ScheduleComponent.swift */,
 				04B6487D2A2EB27C0036618B /* ListView.swift */,
+				049ECDED2A2ECB99004ACA5E /* TabPlace.swift */,
+				049ECDEF2A2ECBF0004ACA5E /* CheckAnimation.swift */,
+				049ECDF12A2ECC3D004ACA5E /* PaymentChoice.swift */,
+				049ECDF32A2ECCAA004ACA5E /* PaymentSuccess.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -261,6 +273,7 @@
 				0431E67E2A28755E00CF4FC6 /* DetailFilm.swift in Sources */,
 				043BD9A52A2CD2B600F22972 /* CinemaViewModel.swift in Sources */,
 				043BD9A92A2CD2DD00F22972 /* CustomList.swift in Sources */,
+				049ECDF42A2ECCAA004ACA5E /* PaymentSuccess.swift in Sources */,
 				047A10432A2B1435002782FD /* MovieShow.swift in Sources */,
 				0472D5922A2C51150074477D /* splash.swift in Sources */,
 				04184F962A1F3A8D00855711 /* ContentView.swift in Sources */,
@@ -270,7 +283,9 @@
 				047A10452A2B157F002782FD /* Cinema.swift in Sources */,
 				04B648762A2E59820036618B /* MapViewModel.swift in Sources */,
 				0431E6742A28632300CF4FC6 /* Film.swift in Sources */,
+				049ECDF02A2ECBF0004ACA5E /* CheckAnimation.swift in Sources */,
 				04B6487A2A2E6B3E0036618B /* ScheduleComponent.swift in Sources */,
+				049ECDF22A2ECC3D004ACA5E /* PaymentChoice.swift in Sources */,
 				04B6487E2A2EB27C0036618B /* ListView.swift in Sources */,
 				0431E67A2A286C9B00CF4FC6 /* ScrollSection.swift in Sources */,
 				04B6486C2A2DFE550036618B /* ProfileView.swift in Sources */,
@@ -283,6 +298,7 @@
 				04B6486A2A2DFC930036618B /* DetailView.swift in Sources */,
 				0472D5982A2CDA220074477D /* SeatGridView.swift in Sources */,
 				0472D5902A2C504C0074477D /* User.swift in Sources */,
+				049ECDEE2A2ECB99004ACA5E /* TabPlace.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
