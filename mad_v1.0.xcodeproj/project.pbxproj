@@ -36,6 +36,7 @@
 		04B648762A2E59820036618B /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B648752A2E59820036618B /* MapViewModel.swift */; };
 		04B648782A2E63A20036618B /* CustomScrollSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B648772A2E63A20036618B /* CustomScrollSection.swift */; };
 		04B6487A2A2E6B3E0036618B /* ScheduleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B648792A2E6B3E0036618B /* ScheduleComponent.swift */; };
+		04B6487E2A2EB27C0036618B /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6487D2A2EB27C0036618B /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		04B648752A2E59820036618B /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		04B648772A2E63A20036618B /* CustomScrollSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollSection.swift; sourceTree = "<group>"; };
 		04B648792A2E6B3E0036618B /* ScheduleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleComponent.swift; sourceTree = "<group>"; };
+		04B6487D2A2EB27C0036618B /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListView.swift; path = ../../../../../.Trash/mad_v1.0/mad_v1.0/View/ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				04B648732A2E1BEC0036618B /* DetailLocationView.swift */,
 				04B648772A2E63A20036618B /* CustomScrollSection.swift */,
 				04B648792A2E6B3E0036618B /* ScheduleComponent.swift */,
+				04B6487D2A2EB27C0036618B /* ListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				04B648762A2E59820036618B /* MapViewModel.swift in Sources */,
 				0431E6742A28632300CF4FC6 /* Film.swift in Sources */,
 				04B6487A2A2E6B3E0036618B /* ScheduleComponent.swift in Sources */,
+				04B6487E2A2EB27C0036618B /* ListView.swift in Sources */,
 				0431E67A2A286C9B00CF4FC6 /* ScrollSection.swift in Sources */,
 				04B6486C2A2DFE550036618B /* ProfileView.swift in Sources */,
 				0472D5962A2CB41E0074477D /* ReservationView.swift in Sources */,

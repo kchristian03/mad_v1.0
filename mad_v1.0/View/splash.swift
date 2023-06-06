@@ -24,6 +24,7 @@ struct splash: View {
                 
                 NavigationLink {
                     HomeView()
+//                    ListView(cinemaViewModel: CinemaViewModel())
                 } label: {
                     Label("Login with Apple", systemImage: "apple.logo")
                 }

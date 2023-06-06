@@ -9,6 +9,9 @@ import SwiftUI
 import MapKit
 
 struct DetailLocationView: View {
+    
+    let cinema: Cinemax
+    
     @EnvironmentObject var filmViewModel: ViewModel
     
     @State var name: String = ""
@@ -30,12 +33,12 @@ struct DetailLocationView: View {
     var iPadLayout: some View {
         ScrollView {
             VStack {
-                MapViewModel(coordinate: CLLocationCoordinate2D(latitude: latitude, longitude: longitude))
+                MapViewModel(coordinate: CLLocationCoordinate2D(latitude: cinema.coordinates.latitude, longitude: cinema.coordinates.longitude))
                     .frame(height: 600)
 //                    .ignoresSafeArea(edges: .top)
                 
                 VStack {
-                    Text(name)
+                    Text(cinema.name)
                         .font(.largeTitle)
                         .bold()
                         .padding()
@@ -43,7 +46,7 @@ struct DetailLocationView: View {
                     HStack {
                         Image(systemName: "map")
                             .frame(width: 30, height: 30)
-                        Text(address)
+                        Text(cinema.address)
                             .font(.title)
                     }
                     .padding(.horizontal)
@@ -127,10 +130,11 @@ struct DetailLocationView: View {
     }
 }
 
-struct DetailLocationView_Previews: PreviewProvider {
-    static var previews: some View {
-        DetailLocationView(name: "Ye", address: "Jl. Mayjen Sungkono No.89, Gn. Sari, Kec. Dukuhpakis, Surabaya, Jawa Timur 60225", latitude: -7.293442343525911, longitude: 112.7192663846563)
-            .environmentObject(ViewModel())
-            .previewDevice("iPad Pro (12.9-inch) (5th generation)")
-    }
-}
+//struct DetailLocationView_Previews: PreviewProvider {
+//    static var previews: some View {
+////        DetailLocationView(name: "Ye", address: "Jl. Mayjen Sungkono No.89, Gn. Sari, Kec. Dukuhpakis, Surabaya, Jawa Timur 60225", latitude: -7.293442343525911, longitude: 112.7192663846563)
+////            .environmentObject(ViewModel())
+////            .previewDevice("iPad Pro (12.9-inch) (5th generation)")
+//        DetailLocationView(cinema: Cinemax, latitude: 0.8754273, longitude: 7.237625)
+//    }
+//}
