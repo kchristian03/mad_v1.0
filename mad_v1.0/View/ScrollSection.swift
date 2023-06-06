@@ -28,7 +28,7 @@ struct ScrollSection: View {
                 HStack(spacing: 20.0) {
                     ForEach(films) { film in
                         NavigationLink {
-                            DetailFilm(ms: film)
+                            DetailView(ms: film)
                         } label: {
                             Image(film.film.imageName)
                                 .resizable()

@@ -9,6 +9,10 @@ import SwiftUI
 
 
 struct DetailView: View {
+    @EnvironmentObject var filmViewModel: ViewModel
+    
+    var ms: MovieShow
+    
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     @State private var showReservationAlert = false
     @State private var selectedRectangleIndex: Int?
@@ -16,7 +20,7 @@ struct DetailView: View {
         
         if horizontalSizeClass == .compact{
             VStack {
-                Image("poster20")
+                Image(ms.film.imageName)
                     .resizable()
                     .scaledToFill()
                     .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
@@ -33,12 +37,12 @@ struct DetailView: View {
                                 .padding(1)
                         }
                         
-                        Text("5.0")
+                        Text(ms.film.rating)
                             .font(.headline)
                         
                         Spacer()
                         
-                        Text("2h 10m")
+                        Text(ms.film.duration)
                             .font(.headline)
                             .padding(15)
                     }
@@ -46,10 +50,10 @@ struct DetailView: View {
                     
                     HStack {
                         VStack(alignment: .leading) {
-                            Text("Nama Film")
+                            Text(ms.film.title)
                                 .font(.headline)
                             
-                            Text("Sub Nama")
+                            Text(ms.film.genre)
                                 .font(.subheadline)
                         }
                         
@@ -58,7 +62,7 @@ struct DetailView: View {
                     .padding(.horizontal)
                     
                     VStack {
-                        Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lorem ut tempus facilisis, odio leo commodo arcu, ut lacinia nunc massa sed risus.")
+                        Text(ms.film.synopsis)
                             .font(.subheadline)
                             .frame(width: 350, height: 100)
                     }
@@ -139,7 +143,7 @@ struct DetailView: View {
         
         else{
             VStack {
-                Image("poster20")
+                Image(ms.film.imageName)
                     .resizable()
                     .scaledToFill()
                     .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
@@ -156,7 +160,7 @@ struct DetailView: View {
                                 .padding(0)
                         }
                         
-                        Text("5.0")
+                        Text(ms.film.rating)
                             .font(.headline)
                         
                         Spacer()
@@ -183,7 +187,7 @@ struct DetailView: View {
                     
                     VStack {
                         ScrollView{
-                            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lorem ut tempus facilisis, odio leo commodo arcu, ut lacinia nunc massa sed risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lorem ut tempus facilisis, odio leo commodo arcu, ut lacinia nunc massa sed risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lorem ut tempus facilisis, odio leo commodo arcu, ut lacinia nunc massa sed risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lorem ut tempus facilisis, odio leo commodo arcu, ut lacinia nunc massa sed risus.")
+                            Text(ms.film.synopsis)
                                 .font(.subheadline)
                             
                         }
@@ -300,7 +304,10 @@ struct DetailView: View {
 }
 
 struct DetailView_Previews: PreviewProvider {
+    static var modelFilm = ViewModel()
+    
     static var previews: some View {
-        DetailView()
+        DetailView(ms: modelFilm.movieshows[0])
+            .environmentObject(modelFilm)
     }
 }
