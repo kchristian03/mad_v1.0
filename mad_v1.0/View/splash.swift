@@ -23,7 +23,9 @@ struct splash: View {
                 Spacer()
                 
                 NavigationLink {
-                    HomeView()
+//                    HomeView()
+                    TabPlace()
+                        .navigationBarBackButtonHidden(true)
 //                    ListView(cinemaViewModel: CinemaViewModel())
                 } label: {
                     Label("Login with Apple", systemImage: "apple.logo")

@@ -9,28 +9,31 @@ import SwiftUI
 
 struct PaymentChoice: View {
     var body: some View {
-        VStack {
-            Text("Choose your payment:")
+        
+        NavigationStack {
             
-            NavigationLink {
-                PaymentSuccess()
-            } label: {
-                Image("gopay_logo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 150, height: 100)
-                    .cornerRadius(20)
+            VStack {
+                Text("Choose your payment:")
+                
+                NavigationLink {
+                    PaymentSuccess()
+                        .navigationBarBackButtonHidden(true)
+                } label: {
+                    VStack {
+                        Image("gopay_logo")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 150, height: 100)
+                            .cornerRadius(20)
+                        Image("ovo_logo")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 150, height: 100)
+                            .cornerRadius(20)
+                    }
+                }
             }
             
-            NavigationLink {
-                PaymentSuccess()
-            } label: {
-                Image("ovo_logo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 150, height: 100)
-                    .cornerRadius(20)
-            }
         }
         
     }

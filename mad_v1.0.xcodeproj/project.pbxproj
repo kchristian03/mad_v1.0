@@ -56,7 +56,7 @@
 		0431E6792A286C9B00CF4FC6 /* ScrollSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollSection.swift; sourceTree = "<group>"; };
 		0431E67D2A28755E00CF4FC6 /* DetailFilm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFilm.swift; sourceTree = "<group>"; };
 		043BD9A42A2CD2B600F22972 /* CinemaViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CinemaViewModel.swift; sourceTree = "<group>"; };
-		043BD9A72A2CD2DD00F22972 /* CustomList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomList.swift; path = mad_v1.0/View/CustomList.swift; sourceTree = SOURCE_ROOT; };
+		043BD9A72A2CD2DD00F22972 /* CustomList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomList.swift; path = mad_v1.0/View/Components/CustomList.swift; sourceTree = SOURCE_ROOT; };
 		0472D58F2A2C504C0074477D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0472D5912A2C51150074477D /* splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splash.swift; sourceTree = "<group>"; };
 		0472D5932A2C81580074477D /* authView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = authView.swift; sourceTree = "<group>"; };
@@ -111,13 +111,13 @@
 		04184F922A1F3A8D00855711 /* mad_v1.0 */ = {
 			isa = PBXGroup;
 			children = (
-				047A10412A2B13AE002782FD /* Resources */,
-				04A5FC292A297BEE004D49E2 /* Model */,
-				04A5FC282A297BE6004D49E2 /* ViewModel */,
-				04A5FC272A297BDE004D49E2 /* View */,
-				04184F932A1F3A8D00855711 /* mad_v1_0App.swift */,
 				04184F972A1F3A9000855711 /* Assets.xcassets */,
+				04184F932A1F3A8D00855711 /* mad_v1_0App.swift */,
+				04A5FC292A297BEE004D49E2 /* Model */,
 				04184F992A1F3A9000855711 /* Preview Content */,
+				047A10412A2B13AE002782FD /* Resources */,
+				04A5FC272A297BDE004D49E2 /* View */,
+				04A5FC282A297BE6004D49E2 /* ViewModel */,
 			);
 			path = mad_v1.0;
 			sourceTree = "<group>";
@@ -133,34 +133,45 @@
 		047A10412A2B13AE002782FD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				047A104A2A2B1C04002782FD /* movieshow.json */,
 				047A10482A2B1BF6002782FD /* cinema.json */,
+				047A104A2A2B1C04002782FD /* movieshow.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		049ECDF52A2F691B004ACA5E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				049ECDEF2A2ECBF0004ACA5E /* CheckAnimation.swift */,
+				043BD9A72A2CD2DD00F22972 /* CustomList.swift */,
+				04B648772A2E63A20036618B /* CustomScrollSection.swift */,
+				0431E6772A286C4B00CF4FC6 /* CustomSearchBar.swift */,
+				049ECDF32A2ECCAA004ACA5E /* PaymentSuccess.swift */,
+				04B648792A2E6B3E0036618B /* ScheduleComponent.swift */,
+				0431E6792A286C9B00CF4FC6 /* ScrollSection.swift */,
+				0472D5972A2CDA220074477D /* SeatGridView.swift */,
+				04B6486D2A2DFF020036618B /* TiketView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		04A5FC272A297BDE004D49E2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				04A5FC2A2A297C67004D49E2 /* UI */,
-				0431E6712A28579E00CF4FC6 /* HomeView.swift */,
-				043BD9A72A2CD2DD00F22972 /* CustomList.swift */,
-				04B6486F2A2E15240036618B /* LocationView.swift */,
-				0431E6792A286C9B00CF4FC6 /* ScrollSection.swift */,
-				0431E67D2A28755E00CF4FC6 /* DetailFilm.swift */,
-				04184F952A1F3A8D00855711 /* ContentView.swift */,
-				0472D5912A2C51150074477D /* splash.swift */,
+				049ECDF52A2F691B004ACA5E /* Components */,
 				0472D5932A2C81580074477D /* authView.swift */,
-				0472D5952A2CB41E0074477D /* ReservationView.swift */,
-				0472D5972A2CDA220074477D /* SeatGridView.swift */,
+				04184F952A1F3A8D00855711 /* ContentView.swift */,
+				0431E67D2A28755E00CF4FC6 /* DetailFilm.swift */,
 				04B648732A2E1BEC0036618B /* DetailLocationView.swift */,
-				04B648772A2E63A20036618B /* CustomScrollSection.swift */,
-				04B648792A2E6B3E0036618B /* ScheduleComponent.swift */,
+				04B648692A2DFC930036618B /* DetailView.swift */,
+				0431E6712A28579E00CF4FC6 /* HomeView.swift */,
 				04B6487D2A2EB27C0036618B /* ListView.swift */,
-				049ECDED2A2ECB99004ACA5E /* TabPlace.swift */,
-				049ECDEF2A2ECBF0004ACA5E /* CheckAnimation.swift */,
+				04B6486F2A2E15240036618B /* LocationView.swift */,
 				049ECDF12A2ECC3D004ACA5E /* PaymentChoice.swift */,
-				049ECDF32A2ECCAA004ACA5E /* PaymentSuccess.swift */,
+				04B6486B2A2DFE550036618B /* ProfileView.swift */,
+				0472D5952A2CB41E0074477D /* ReservationView.swift */,
+				0472D5912A2C51150074477D /* splash.swift */,
+				049ECDED2A2ECB99004ACA5E /* TabPlace.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,9 +179,9 @@
 		04A5FC282A297BE6004D49E2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				0410DBDB2A28EDA700335F5C /* ViewModel.swift */,
 				043BD9A42A2CD2B600F22972 /* CinemaViewModel.swift */,
 				04B648752A2E59820036618B /* MapViewModel.swift */,
+				0410DBDB2A28EDA700335F5C /* ViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -178,23 +189,12 @@
 		04A5FC292A297BEE004D49E2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				047A10442A2B157F002782FD /* Cinema.swift */,
 				0431E6732A28632300CF4FC6 /* Film.swift */,
 				047A10422A2B1435002782FD /* MovieShow.swift */,
-				047A10442A2B157F002782FD /* Cinema.swift */,
 				0472D58F2A2C504C0074477D /* User.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		04A5FC2A2A297C67004D49E2 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				0431E6772A286C4B00CF4FC6 /* CustomSearchBar.swift */,
-				04B648692A2DFC930036618B /* DetailView.swift */,
-				04B6486B2A2DFE550036618B /* ProfileView.swift */,
-				04B6486D2A2DFF020036618B /* TiketView.swift */,
-			);
-			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
