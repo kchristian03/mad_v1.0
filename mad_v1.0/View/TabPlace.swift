@@ -43,7 +43,7 @@ struct TabPlace: View {
                     
                     LocationView(cinemaViewModel: CinemaViewModel())
                         .tabItem {
-                            Label("Payment", systemImage: "map")
+                            Label("Cinema", systemImage: "map")
                                 .imageScale(.large)
                                 .foregroundColor(.white)
                         }

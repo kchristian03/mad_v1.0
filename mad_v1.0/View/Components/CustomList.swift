@@ -7,8 +7,9 @@
 
 import SwiftUI
 
-struct CustomList: View {
+struct CustomList<Destination: View>: View {
     let cinemaName: String
+    var buttonDestination: () -> Destination
     
     var body: some View {
         if UIDevice.current.userInterfaceIdiom == .pad {
@@ -22,7 +23,7 @@ struct CustomList: View {
         var iPadLayout: some View {
             VStack {
                 Button(action: {}) {
-                    NavigationLink(destination: Text(cinemaName)) {
+                    NavigationLink(destination: buttonDestination) {
                         ZStack {
                             Rectangle()
                                 .cornerRadius(10)
@@ -52,7 +53,7 @@ struct CustomList: View {
         var iPhoneLayout: some View {
             VStack {
                 Button(action: {}) {
-                    NavigationLink(destination: Text(cinemaName)) {
+                    NavigationLink(destination: buttonDestination) {
                         ZStack {
                             Rectangle()
                                 .cornerRadius(10)
@@ -81,10 +82,10 @@ struct CustomList: View {
 struct CustomList_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            CustomList(cinemaName: "ABC Cinema")
+            CustomList<Text>(cinemaName: "ABC Cinema", buttonDestination: {Text("Tehe <3")})
                 .previewDevice("iPhone 13")
             
-            CustomList(cinemaName: "ABC Cinema")
+            CustomList<Text>(cinemaName: "ABC Cinema", buttonDestination: {Text("Tehe <3")})
                 .previewDevice("iPad Pro (12.9-inch) (5th generation)")
         }
     }

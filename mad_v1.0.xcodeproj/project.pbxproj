@@ -32,6 +32,8 @@
 		049ECDF02A2ECBF0004ACA5E /* CheckAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049ECDEF2A2ECBF0004ACA5E /* CheckAnimation.swift */; };
 		049ECDF22A2ECC3D004ACA5E /* PaymentChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049ECDF12A2ECC3D004ACA5E /* PaymentChoice.swift */; };
 		049ECDF42A2ECCAA004ACA5E /* PaymentSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049ECDF32A2ECCAA004ACA5E /* PaymentSuccess.swift */; };
+		04AFE4EA2A2F81DC00CB24E4 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFE4E92A2F81DC00CB24E4 /* ListView.swift */; };
+		04AFE4F12A2F8A8900CB24E4 /* cinemaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFE4F02A2F8A8900CB24E4 /* cinemaData.swift */; };
 		04B6486A2A2DFC930036618B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B648692A2DFC930036618B /* DetailView.swift */; };
 		04B6486C2A2DFE550036618B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6486B2A2DFE550036618B /* ProfileView.swift */; };
 		04B6486E2A2DFF020036618B /* TiketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6486D2A2DFF020036618B /* TiketView.swift */; };
@@ -40,7 +42,6 @@
 		04B648762A2E59820036618B /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B648752A2E59820036618B /* MapViewModel.swift */; };
 		04B648782A2E63A20036618B /* CustomScrollSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B648772A2E63A20036618B /* CustomScrollSection.swift */; };
 		04B6487A2A2E6B3E0036618B /* ScheduleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B648792A2E6B3E0036618B /* ScheduleComponent.swift */; };
-		04B6487E2A2EB27C0036618B /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6487D2A2EB27C0036618B /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,8 @@
 		049ECDEF2A2ECBF0004ACA5E /* CheckAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckAnimation.swift; sourceTree = "<group>"; };
 		049ECDF12A2ECC3D004ACA5E /* PaymentChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentChoice.swift; sourceTree = "<group>"; };
 		049ECDF32A2ECCAA004ACA5E /* PaymentSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSuccess.swift; sourceTree = "<group>"; };
+		04AFE4E92A2F81DC00CB24E4 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		04AFE4F02A2F8A8900CB24E4 /* cinemaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cinemaData.swift; sourceTree = "<group>"; };
 		04B648692A2DFC930036618B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		04B6486B2A2DFE550036618B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		04B6486D2A2DFF020036618B /* TiketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiketView.swift; sourceTree = "<group>"; };
@@ -78,7 +81,6 @@
 		04B648752A2E59820036618B /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		04B648772A2E63A20036618B /* CustomScrollSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollSection.swift; sourceTree = "<group>"; };
 		04B648792A2E6B3E0036618B /* ScheduleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleComponent.swift; sourceTree = "<group>"; };
-		04B6487D2A2EB27C0036618B /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListView.swift; path = ../../../../../.Trash/mad_v1.0/mad_v1.0/View/ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			children = (
 				047A10482A2B1BF6002782FD /* cinema.json */,
 				047A104A2A2B1C04002782FD /* movieshow.json */,
+				04AFE4F02A2F8A8900CB24E4 /* cinemaData.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -146,7 +149,6 @@
 				043BD9A72A2CD2DD00F22972 /* CustomList.swift */,
 				04B648772A2E63A20036618B /* CustomScrollSection.swift */,
 				0431E6772A286C4B00CF4FC6 /* CustomSearchBar.swift */,
-				049ECDF32A2ECCAA004ACA5E /* PaymentSuccess.swift */,
 				04B648792A2E6B3E0036618B /* ScheduleComponent.swift */,
 				0431E6792A286C9B00CF4FC6 /* ScrollSection.swift */,
 				0472D5972A2CDA220074477D /* SeatGridView.swift */,
@@ -158,20 +160,14 @@
 		04A5FC272A297BDE004D49E2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				049ECDF52A2F691B004ACA5E /* Components */,
-				0472D5932A2C81580074477D /* authView.swift */,
 				04184F952A1F3A8D00855711 /* ContentView.swift */,
-				0431E67D2A28755E00CF4FC6 /* DetailFilm.swift */,
-				04B648732A2E1BEC0036618B /* DetailLocationView.swift */,
-				04B648692A2DFC930036618B /* DetailView.swift */,
-				0431E6712A28579E00CF4FC6 /* HomeView.swift */,
-				04B6487D2A2EB27C0036618B /* ListView.swift */,
-				04B6486F2A2E15240036618B /* LocationView.swift */,
-				049ECDF12A2ECC3D004ACA5E /* PaymentChoice.swift */,
-				04B6486B2A2DFE550036618B /* ProfileView.swift */,
-				0472D5952A2CB41E0074477D /* ReservationView.swift */,
-				0472D5912A2C51150074477D /* splash.swift */,
 				049ECDED2A2ECB99004ACA5E /* TabPlace.swift */,
+				049ECDF52A2F691B004ACA5E /* Components */,
+				04AFE4EB2A2F833A00CB24E4 /* Home */,
+				04AFE4EE2A2F83E300CB24E4 /* LandingPage */,
+				04AFE4EF2A2F840800CB24E4 /* Location */,
+				04AFE4ED2A2F83C100CB24E4 /* Payment */,
+				04AFE4EC2A2F839100CB24E4 /* Profile */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -195,6 +191,53 @@
 				0472D58F2A2C504C0074477D /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		04AFE4EB2A2F833A00CB24E4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0431E6712A28579E00CF4FC6 /* HomeView.swift */,
+				0431E67D2A28755E00CF4FC6 /* DetailFilm.swift */,
+				04B648692A2DFC930036618B /* DetailView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		04AFE4EC2A2F839100CB24E4 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				04B6486B2A2DFE550036618B /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		04AFE4ED2A2F83C100CB24E4 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				049ECDF12A2ECC3D004ACA5E /* PaymentChoice.swift */,
+				049ECDF32A2ECCAA004ACA5E /* PaymentSuccess.swift */,
+				0472D5952A2CB41E0074477D /* ReservationView.swift */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		04AFE4EE2A2F83E300CB24E4 /* LandingPage */ = {
+			isa = PBXGroup;
+			children = (
+				0472D5932A2C81580074477D /* authView.swift */,
+				0472D5912A2C51150074477D /* splash.swift */,
+			);
+			path = LandingPage;
+			sourceTree = "<group>";
+		};
+		04AFE4EF2A2F840800CB24E4 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				04B648732A2E1BEC0036618B /* DetailLocationView.swift */,
+				04AFE4E92A2F81DC00CB24E4 /* ListView.swift */,
+				04B6486F2A2E15240036618B /* LocationView.swift */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +314,7 @@
 			files = (
 				04B648742A2E1BEC0036618B /* DetailLocationView.swift in Sources */,
 				0431E67E2A28755E00CF4FC6 /* DetailFilm.swift in Sources */,
+				04AFE4EA2A2F81DC00CB24E4 /* ListView.swift in Sources */,
 				043BD9A52A2CD2B600F22972 /* CinemaViewModel.swift in Sources */,
 				043BD9A92A2CD2DD00F22972 /* CustomList.swift in Sources */,
 				049ECDF42A2ECCAA004ACA5E /* PaymentSuccess.swift in Sources */,
@@ -285,8 +329,8 @@
 				0431E6742A28632300CF4FC6 /* Film.swift in Sources */,
 				049ECDF02A2ECBF0004ACA5E /* CheckAnimation.swift in Sources */,
 				04B6487A2A2E6B3E0036618B /* ScheduleComponent.swift in Sources */,
+				04AFE4F12A2F8A8900CB24E4 /* cinemaData.swift in Sources */,
 				049ECDF22A2ECC3D004ACA5E /* PaymentChoice.swift in Sources */,
-				04B6487E2A2EB27C0036618B /* ListView.swift in Sources */,
 				0431E67A2A286C9B00CF4FC6 /* ScrollSection.swift in Sources */,
 				04B6486C2A2DFE550036618B /* ProfileView.swift in Sources */,
 				0472D5962A2CB41E0074477D /* ReservationView.swift in Sources */,

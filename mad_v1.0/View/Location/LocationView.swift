@@ -9,6 +9,7 @@ import SwiftUI
 
 struct LocationView: View {
     @ObservedObject var cinemaViewModel: CinemaViewModel
+//    let cinemas: Cinemax
     
     var body: some View {
         NavigationStack {
@@ -44,12 +45,12 @@ struct LocationView: View {
             
             ScrollView {
                 
-                
-                VStack {
-                    CustomList(cinemaName: "Ye")
-                    CustomList(cinemaName: "Ye")
-                    CustomList(cinemaName: "Ye")
-                    Spacer()
+                VStack(){
+                    ForEach(cinemas, id: \.self) { cinema in
+                        CustomList(cinemaName: cinema.name) {
+                            DetailLocationView(cinema: cinema)
+                        }
+                    }
                 }
                 .padding(.top)
             }
@@ -71,11 +72,12 @@ struct LocationView: View {
                     Spacer()
                 }
                 
-                VStack {
-                    CustomList(cinemaName: "Ye")
-                    CustomList(cinemaName: "Ye")
-                    CustomList(cinemaName: "Ye")
-                    Spacer()
+                VStack(){
+                    ForEach(cinemas, id: \.self) { cinema in
+                        CustomList(cinemaName: cinema.name) {
+                            DetailLocationView(cinema: cinema)
+                        }
+                    }
                 }
                 .padding(.top)
             }
