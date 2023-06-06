@@ -34,10 +34,11 @@ struct LocationView: View {
         VStack {
             HStack {
                 Text("Lokasi")
-                    .font(.system(size: 50, weight: .bold))
+                    .font(.largeTitle)
+                    .bold()
                     .foregroundColor(.white)
                     .padding(.horizontal)
-
+                Spacer()
             }
             .padding(.horizontal)
             .padding(.top, 30)

@@ -30,7 +30,7 @@ struct CustomList: View {
                             
                             HStack {
                                 Text(cinemaName)
-                                    .font(.title2)
+                                    .font(.title)
                                     .foregroundColor(.black)
                                     .bold()
                                 Spacer()
@@ -41,7 +41,7 @@ struct CustomList: View {
                             .padding(.horizontal)
                         }
                         .frame(height: 69)
-//                        .padding(.bottom)
+                        .padding(.bottom)
                     }
                 }
             }
